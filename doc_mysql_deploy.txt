@@ -1,0 +1,168 @@
+### for deployning mysql container in k8s, we needs have some pre-requi
+
+persistent volume
+persistent volume claim
+these are api's to create storage resosuce for database
+
+
+1) we needs create storage location in local in workernode
+36  mkdir /mnt/data
+
+   37  cd /mnt/data/
+
+   38  ls
+
+
+2) create pv.yml file
+
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: task-pv-volume
+spec:
+  storageClassName: nodestorage
+  capacity:
+    storage: 10Gi #we are consuming 10gi of storage. but this is thin provisioning. 
+  accessModes: 
+      - ReadWriteOnce #readwritemany #read
+  hostPath:
+      path: /mnt/data
+
+
+command:
+  316  kubectl apply -f pv.yml
+
+
+3)create pvc.yml file
+
+apiVersion: v1 
+kind: PersistentVolumeClaim
+metadata:
+  name: task-pv-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+    # we need to map pv with pvc so that pod can use the claim. 
+  storageClassName: nodestorage #this is the name of the storage or resource provision by persistent volume
+  resources:
+    requests:
+      storage: 10Gi 
+	  
+	  
+comands:
+  325  kubectl apply -f pvc.yml
+
+  326  kubectl get pv
+
+  327  kubectl get pvc
+
+4) create configmap.yml file
+
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: usermgmt-dbcreation-script
+data:
+  mysql_usermgmt.sql: |
+    DROP DATABASE IF EXISTS webappdb;
+    CREATE DATABASE webappdb;
+	
+	
+commands:
+  332  kubectl apply -f configmap.yml
+
+  333  kubectl get configmap
+
+  334  kubectl describe configmap usermgmt-dbcreation-script
+
+5) create mysqlsecret.yml
+
+apiVersion: v1 
+kind: Secret
+metadata:
+  name: my-db-secret
+type: Opaque
+data:
+  db-password: ZGJwYXNzd29yZDEx
+  
+  
+commands:
+  337  kubectl apply -f mysqlsecret.yml
+
+  338  kubectl get secret
+
+  339  kubectl describe secret my-db-secret
+
+
+6)mysql-deployment.yml
+
+apiVersion: apps/v1 #we know that all the communication in k8s happen through api. 
+#what we want to create
+#inside kind you need to define type of api you want to execute. 
+kind: Deployment #pod#service
+metadata: #using metada and name we define the name of deployment
+  name: mysql-deployment #a deployment name myapp-deployment is created using .metadata.name field
+  labels:
+    app: myapp 
+spec: #inside your deployment we need to provide spec how this deployment api will launch your pod
+  replicas: 1 #it will create three pod
+  selector: #the .spec.selector file define ho the deployment find which pod to manage. 
+    matchLabels: #.spec.selector.matchlabel it is euqivalent to map ke,value. something called as match expression
+      app: mysql 
+  template: #container template deploy in three pod
+    metadata:
+      name: myapp-mysql   #using metadata name
+      labels: 
+        app: mysql  #this label should match with pod label. 
+    spec: #we define container spec
+        containers:
+          - name: mysql  
+            image: mysql:5.6 
+            env:
+              - name: MYSQL_ROOT_PASSWORD 
+                valueFrom:
+                  secretKeyRef:
+                #this two value come from mysqlsecret.yml 
+                    name: my-db-secret #this is the name of the secret
+                    key: db-password #data of the secret 
+            ports:
+              - containerPort: 3306 
+                name: mysql 
+              #this volume mount is inside my container
+            volumeMounts:
+            - name: mysql-persistent-volume  
+              mountPath: /var/lib/mysql 
+                #the configmap i need to run inside your container. to update my sql
+            - name: usermgmt-dbscript 
+              mountPath: /docker-entrypoint-initdb.d #this defination is given in hub.docker.com
+        #but outside your container it need to be attached with mnt data. 
+        volumes: #the name of the volume and the mount will be same
+          - name: mysql-persistent-volume 
+            persistentVolumeClaim:
+            #mapped to pvc claim we created earlier
+              claimName: task-pv-claim
+          - name: usermgmt-dbscript
+            configMap: 
+              name: usermgmt-dbcreation-script
+
+commands:
+
+kubectl apply -f mysql-deployment.yml
+
+kubectl get deploy
+
+kubectl describe deploy mysql
+
+kubectl get pod
+
+kubectl exec -it nameofthepod /bin/bash
+kubectl exec -it mysql-deployment-5495c77f58-jbp6b /bin/bash
+
+mysql -u root -p
+
+dbpassword11
+
+show databases;
+
+
+

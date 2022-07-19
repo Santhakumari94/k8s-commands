@@ -1,0 +1,117 @@
+ 187  kubectl get pod
+  188  kubectl expose pod myapp1-deployment-689959889c-fzwkg --type=NodePort --port=8080 --name=my-third-service
+  189  kubectl get svc
+  190  kubectl get pod
+  191  kubectl describe pod myapp1-deployment-689959889c-fzwkg
+  192  cd
+  193  mkdir k8s
+  194  cd k8s/
+  195  git clone https://github.com/gopal1409/sapient-deploy-manifest.git
+  196  ls
+  197  cd sapient-deploy-manifest/
+  198  ls
+  199  vi service.yml
+  200  kubectl get deploy
+  201  kubectl delete myapp-deployment
+  202  kubectl delete deploy myapp-deployment
+  203  kubectl delete deploy myapp1-deployment
+  204  kubectl get pod
+  205  kubectl apply -f service.yml
+  206  kubectl get deploy
+  207  kubectl apply -f deployment.yml
+  208  kubectl get deploy
+  209  cd  k8s/
+  210  cd sapient-deploy-manifest/
+  211  git pull
+  212  kubectl get deploy
+  213  kubectl get svc
+  214  kubectl get pod
+  215  kubectl describe svc myapp-service
+  216  git pull
+  217  cd k8s/sapient-deploy-manifest/
+  218  git pull
+  219  kubectl apply -f service.yml
+  220  kubectl get svc
+  221  kubectl describe svc myapp-service
+  222  kubectl get pod -o wide
+  223  kubectl get pod
+  224  kubectl edit deploy myapp-deployment
+  225  kubectl get deploy
+  226  kubectl get svc
+  227  kubectl get pod -o wide
+  228  kubectl get rs
+  229  kubectl describe deploy myapp-deployment
+  230  kubectl rollout history deploy myapp-deployment
+  231  kubectl describe deploy myapp-deployment
+  232  kubectl get rs
+  233  kubectl set image deploy/myapp-deployment myapp-container=nginx:1.16.1
+  234  kubectl set image deploy/myapp-deployment myapp-container=nginx:1.161
+  235  kubectl rollout history deploy myapp-deployment
+  236  kubectl get deploy
+  237  kubectl get de
+  238  kubectl describe pod myapp-deployment-5c977466b5-ctssw
+  239  kubectl rollout undo deploy/myapp-deployment
+  240  kubectl get deploy
+  241  kubectl get pod
+  242  kubectl rollout undo deploy/myapp-deployment
+  243  kubectl get pod
+  244  kubectl rollout undo deploy/myapp-deployment
+  245  kubectl get po
+  246  kubectl get deploy
+  247  kubectl rollout undo deploy/myapp-deployment
+  248  kubectl get deploy
+  249  kubectl rollout undo deploy/myapp-deployment
+  250  kubectl get deploy
+  251  kubectl get pod
+  252  kubectl rollout undo deploy/myapp-deployment --to-revision=2
+  253  kubectl get pod
+  254  kubectl get deploy
+  255  kubectl rollout undo deploy/myapp-deployment
+  256  kubectl get pod
+  257  kubectl get rs
+  258  kubectl rollout undo deploy/myapp-deployment
+  259  kubectl get rs
+  260  kubectl describe rs
+  261  kubectl get deploy
+  262  kubectl scale deploy/myapp-deployment --replicas=5
+  263  kubectl get pod
+  264  kubectl autoscale deploy/myapp-deployment --min=10 --max=15 --cpu-percent=80
+  265  kubectl get deploy
+  266  kubectl get hpa
+  267  kubectl get pod
+  268  cd k8s/
+  269  cd sapient-deploy-manifest/
+  270  git pull
+  271  kubctl apply -f pv.yml
+  272  kubectl apply -f pv.yml
+  273  kubectl get pv
+  274  git pull
+  275  kubectl get pvc.yml
+  276  git pull
+  277  ls
+  278  kubectl get pv
+  279  kubectl get pvc
+  280  git pull
+  281  kubectl apply -f configmap.yml
+  282  kubectl get configma
+  283  kubectl get configmap
+  284* kubectl describe uusermgmt-dbcreation-scriptkube
+  285  kubectl describe configmap uusermgmt-dbcreation-script
+  286  kubectl describe configmap usermgmt-dbcreation-script
+  287  git pull
+  288  ls
+  289  kubectl apply -f mysqlsecret.yml
+  290  kubectl get secret
+  291  kubectl describe secret my-bd-scret
+  292  kubectl describe secret my-db-secret
+  293  git pull
+  294  kubectl apply -f mysql-deployment.yml
+  295  git pull
+  296  kubectl apply -f mysql-deployment.yml
+  297  kubectl describe deploy
+  298  kubectl describe deploy mysql
+  299  kubectl exec -it nameofthepod --bin-bash
+  300  kubectl get pid
+  301  kubectl get pod
+  302  kubectl exec -it mysql-deployment-5495c77f58-jbp6b /bin/bash
+  303  history

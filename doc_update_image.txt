@@ -1,0 +1,32 @@
+##### To update image by using set
+
+ kubectl set image deploy/myapp-deployment myapp-container=nginx:1.16.1
+ 
+  kubectl get deploy
+  264  kubectl get pod
+  265  kubectl describe pod myapp-deployment-5c977466b5-ktfw5
+  
+  kubectl rollout history deploy myapp-deployment              ---- can see updates history
+  
+  269  kubectl rollout undo deploy/myapp-deplyment   -----can rollout the current verion to previous version using undo
+  270    271  kubectl get deploy
+  272 
+  275  kubectl rollout undo deploy/myapp-deployment --to-revision=2
+  
+  
+  
+  ######scale-out the pod
+  
+
+  281  kubectl scale deploy/myapp-deployment --replicas=5
+
+  282  kubectl get pod
+
+284  kubectl autoscale deploy/myapp-deployment --min=10 --max=15 --cpu-percent=80
+
+  285  kubectl get deploy
+
+  286  kubectl get pod
+
+kubectl get hpa   
+
