@@ -1,0 +1,449 @@
+root@mydockeransiblevm:~# history
+    1  exit
+    2  docker -version
+    3  exit
+    4  docker ps -a
+    5  docker container ls
+    6  exit
+    7  vi /root/.ssh/authorized_keys
+    8  docker ps
+    9  docker ps -a
+   10  docker --version
+   11  git clone https://github.com/Santhakumari94/springboot-learning-app-k8s.git
+   12  ls
+   13  cd springboot-learning-app-k8s/
+   14  la
+   15  ls
+   16  docker build -t learnerapp:v1 .
+   17  mvn verify
+   18  apt install maven
+   19  ls
+   20  mvn verify
+   21  ls
+   22  docker build -t learnerapp:v1 .
+   23  docker images
+   24  docker tag fa959b132f5c santhakumari94/learnerapp:v1
+   25  docker images
+   26  docker login
+   27  docker push santhakumari94/learnerapp:v1
+   28  git pull
+   29  docker build -t cloudlearning-app:v2 .
+   30  docker images
+   31  docker tag fa959b132f5c santhakumari94/cloudlearning-app:v2
+   32  docker images
+   33  docker push santhakumari94/cloudlearning-app:v2
+   34  git pull
+   35  mvn verify
+   36  docker build -t cloud-learning-app:v2 .
+   37  docker images
+   38  docker tag c11df949e9f0 santhakumari94/cloud-learning-app
+   39  docker images
+   40  docker tag c11df949e9f0 santhakumari94/cloud-learning-app:v2
+   41  docker images
+   42  docker push santhakumari94/cloud-learning-app:v2
+   43  docker login
+   44  docker pull santhakumari94/loginapp3
+   45  docker pull santhakumari94/loginapp3:2.0
+   46  docker images
+   47  docker container run -d -p 8080:8080 santhakumari94/loginapp3:2.0
+   48  docker ps
+   49  docker ps -a
+   50  docker container run -d -p 8080:8080 santhakumari94/loginapp3:2.0
+   51  docker ps -a
+   52  ls
+   53  git clone https://github.com/Santhakumari94/docker-repo-springboot-app_login.git
+   54  ls
+   55  cd docker-repo-springboot-app_login/
+   56  ls
+   57  mvn verify
+   58  docker build -it loginapp .
+   59  docker build -t loginapp .
+   60  docker images
+   61  docker run -d -p 8080:8080 loginapp
+   62  docker ps -a
+   63  docker exec -it 08c26b305cc3
+   64  history
+   65  docker exec -it 08c26b305cc3 bash
+   66  docker run -it -p 8080:8080 loginapp bash
+   67  ls
+   68  cat dockerfile
+   69  mv dockerfile dockerfile-2
+   70  cat dockeerfile-1 mv docke
+   71  mv dockeerfile-1 dockerfile
+   72  ls
+   73  ls target/
+   74  docker build -t loginapp-1 .
+   75  docker images
+   76  docker run -d -p 8080:8080 loginapp-1
+   77  docker ps
+   78  docker tag 753daaa11cb8 santhakumari94/loginapp-1
+   79  docker images
+   80  docker push santhakumari94/loginapp-1
+   81  ls
+   82  cd docker-repo-springboot-app_login/
+   83  git pull
+   84  docker build -t loginapp-2 .
+   85  docker images
+   86  docker tag 753daaa11cb8 santhakumari94/loginapp-2
+   87  docker push santhakumari94/loginapp-2
+   88  ls
+   89  cd docker-repo-springboot-app_login/
+   90  ls
+   91  git pull
+   92  cat src/main/resources/application.properties
+   93  ls
+   94  rm target/
+   95  rmdir target/
+   96  rmdir -f target/
+   97  rm target/*
+   98  rmdir target/
+   99  ls target/
+  100  rm -f target/
+  101  mvn verify
+  102  mvn clean verify
+  103  git pull
+  104  mvn clean verify
+  105  ls target/
+  106  docker images
+  107  docker build -t emp-loginapp .
+  108  docker images
+  109  docker login
+  110  docker tag 91a9630a7c80 santhakumari94/emp-loginapp
+  111  docker push santhakumari94/emp-loginapp
+  112  dddd
+  113  docker container run -d -p 8080:8080 santhakumari94/emp-loginapp
+  114  docker ps
+  115  docker ps -a
+  116  docker container run -d -p 8080:8080 santhakumari94/emp-loginapp
+  117  docker ps -a
+  118  docker container run -it -p 8080:8080 santhakumari94/emp-loginapp bash
+  119  git pull
+  120  cat target/
+  121  ls target/
+  122  rm target/Employee-0.0.1-SNAPSHOT.jar
+  123  mvn clean verify
+  124  mvn verify
+  125  ls target/
+  126  docker build -t emp-loginapp-1 .
+  127  docker container run -it -p 8080:8080 emp-loginapp-1 bash
+  128  ls
+  129  clear
+  130  ls
+  131  docker images
+  132  docker tag 1968ab4ab8d4 santhakumari94/emp-loginapp-1
+  133  docker push santhakumari94/emp-loginapp-1
+  134  ls target/
+  135  docker images
+  136  docker ps
+  137  docker run  -e "APP_MERCHANT=DEFAULT"
+  138  docker run -e "APP_MERCHANT=DEFAULT" -e "APP_BASE_URL=http://localhost:8080" -p 80:80 shopizerecomm/shopizer-shop-reactjs
+  139  clear
+  140  docker run -p 8080:8080 shopizerecomm/shopizer:latest
+  141  clear
+  142  docker ps
+  143  docker stop 17731f839d41
+  144  docker stop f8a05c4fae81
+  145  docker stop b8fc3fb7d429
+  146  docker container prune
+  147  git clone https://github.com/chia030/corona-prevention-division.git
+  148  ls
+  149  cd corona-prevention-division/
+  150  ls
+  151  mvn verify
+  152  ls
+  153  vi src/ls
+  154  vi src/main/resources/application.properties
+  155  mvn verify
+  156  ls
+  157  cd src/
+  158  ls
+  159  ls test/
+  160  cd test/java/com/
+  161  ls
+  162  cd cpd/
+  163  ls
+  164  vi coronapreventiondivision/
+  165  cd coronapreventiondivision/
+  166  ls
+  167  vi CoronaPreventionDivisionApplicationTests.java
+  168  cd
+  169  cd corona-prevention-division/
+  170  mvn clean verify
+  171  -cd
+  172  man cd
+  173  cd -help
+  174  cd test/java/com/
+  175  ls
+  176  cd src/test/java/com/
+  177  cd  cpd/coronapreventiondivision/
+  178  vi CoronaPreventionDivisionApplicationTests.java
+  179  cd
+  180  mvn clean verify
+  181  cd corona-prevention-division/
+  182  mvn clean verify
+  183  mvn build
+  184  cd ..
+  185  git clone https://github.com/sushildangi/online-shopping.git
+  186  cd online-shopping/
+  187  ls
+  188  cd online-shopping/
+  189  ls
+  190  mvn verify
+  191  mvn clean install package
+  192  cd src/main/
+  193  ls
+  194  cd ..
+  195  ls
+  196  docker run  -e "APP_BASE_URL=http://localhost:8080/api"  -p 82:80 shopizerecomm/shopizer-admin
+  197  ls
+  198  cd springboot-learning-app-k8s/
+  199  ls
+  200  cat Dockerfile
+  201  cd
+  202  git clone https://github.com/Santhakumari94/emart-online-shopping-k8s-lab.git
+  203  ls
+  204  ce emart-online-shopping-k8s-lab/
+  205  ls
+  206  cd emart-online-shopping-k8s-lab/
+  207  ls
+  208  mvn verify
+  209  git pull
+  210  mvn clean package
+  211  git pull
+  212  mvn verify
+  213  ls
+  214  cat target/
+  215  ls target/
+  216  tree
+  217  apt install -y tree
+  218  tree
+  219  mvn package -DskipTests
+  220  ls target/
+  221  mvn verify -DskipTests
+  222  ls target/
+  223  cd ..
+  224  ls
+  225  cd docker-repo-springboot-app_login/
+  226  ls
+  227  ls target/
+  228  ls
+  229  cd
+  230  ls
+  231  cd springboot-learning-app-k8s/
+  232  ls target/
+  233  cat pom.xml
+  234  cd
+  235  ls
+  236  cd docker-repo-springboot-app_login/
+  237  ls
+  238  ls target/
+  239  cat dockerfile
+  240  cd
+  241  cd emart-online-shopping-k8s-lab/
+  242  ls target/
+  243  vi Dockerfile
+  244  docker build -t emartapp .
+  245  docker login
+  246  docker images
+  247  docker tag santhakumari94/emartapp
+  248  history
+  249  docker images
+  250  docker tag c8f7481c05d9 santhakumari94/emartapp
+  251  docker images
+  252  docker push santhakumari94/emartapp
+  253  ls
+  254  mkdir emar
+  255  cde emar
+  256  cd emar
+  257  cd
+  258  rmdir emar
+  259  mkdir emart
+  260  cd emart
+  261  git clone https://github.com/Santhakumari94/emart-onlineshoping-k8s.git
+  262  cd emart-onlineshoping-k8s/
+  263  mvn verify -DskipTests
+  264  ls target/
+  265  ls
+  266  cat Dockerfile
+  267  docker build -t emartonlineapp .
+  268  docker images
+  269  docker tag 45add4924697 santhakumari94/emartonlineapp
+  270  docker images
+  271  docker login
+  272  docker push santhakumari94/emartonlineapp
+  273  ls
+  274  cd
+  275  ls
+  276  git clone https://github.com/gopal1409/springboot-chat-app.git
+  277  ls
+  278  cd springboot-chat-app/
+  279  ls
+  280  mvn clean package
+  281  docker images
+  282  mvnw spring-boot:build-image
+  283  mvn spring-boot:build-image
+  284  docker volume create sonarqube-conf
+  285  docker volume create sonarqube-data
+  286  docker volume create sonarqube-logs
+  287  docker volume create sonarqube-extensions
+  288  mkdir /sonarqube
+  289  ln -s /var/lib/docker/volumes/sonarqube-conf/_data /sonarqube/conf
+  290  ln -s /var/lib/docker/volumes/sonarqube-data/_data /sonarqube/data
+  291  ln -s /var/lib/docker/volumes/sonarqube-logs/_data /sonarqube/logs
+  292  docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 -v sonarqube-conf:/opt/sonarqube/conf -v sonarqube-data:/opt/sonarqube/data -v sonarqube-logs:/opt/sonarqube/logs -v sonarqube-extensions:/opt/sonarqube/extensions sonarqube
+  293  systemctl status sonarqube
+  294  docker ps
+  295  ls
+  296  cd emart
+  297  ls
+  298  cd emart-onlineshoping-k8s/
+  299  ls
+  300  vi pom.xml
+  301  mvn verify
+  302  cd src/test/java/
+  303  ls
+  304  mv TheEmartApp emartapp
+  305  ls
+  306  cd emartapp/
+  307  ls
+  308  vi TheEmartAppApplicationTests.java
+  309  cd ../..
+  310  mvn verify
+  311  mvn -DskipTests package
+  312  cd emart
+  313  cd emart-onlineshoping-k8s/
+  314  vi src/main/resources/application.properties
+  315  mvn clean package
+  316  cat src/main/resources/application.properties
+  317  docker ps
+  318  docker images
+  319  docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 -v sonarqube-conf:/opt/sonarqube/conf -v sonarqube-data:/opt/sonarqube/data -v sonarqube-logs:/opt/sonarqube/logs -v sonarqube-extensions:/opt/sonarqube/extensions sonarqube
+  320  docker container ps -a
+  321  docker start 89fff7167150
+  322  docker container ps -a
+  323  cd
+  324  vi /root/.ssh/authorized_keys
+  325  clear
+  326  mysql -uroot -p
+  327  mysql -uroot -proot
+  328  mysql -uroot -predhat
+  329  ls
+  330  cd emart
+  331  ls
+  332  cd emart-onlineshoping-k8s/
+  333  ls
+  334  mvn package
+  335  apt install mysql -y
+  336  apt update -y
+  337  apt install mysql -y
+  338  cd
+  339  apt install mysql-server mysql-client
+  340  mysql --version
+  341  mysql -uroot -proot
+  342  ls
+  343  cd emart
+  344  cd emart-onlineshoping-k8s/
+  345  mvn package
+  346  cat src/main/resources/application.properties
+  347  mysql --version
+  348  systemctl status mysql
+  349  mvn package
+  350  mvn clean package
+  351  ls
+  352  cd emart
+  353  ls
+  354  git clone https://github.com/Santhakumari94/testing-repo.git
+  355  cd testing-repo/
+  356  ls
+  357  mvn clean package
+  358  ls
+  359  docker build -t restrepoapp .
+  360  docker images
+  361  docker login
+  362  docker tag 4034962e8dd2 santhakumari94/restrepoapp
+  363  docker login
+  364  docker images
+  365  docker push santhakumari94/restrepoapp
+  366  chmod +x ~/install-talisman.sh
+  367  cd
+  368  ls
+  369  git clone git@github.com:gopal1409/python-docker-app1.git
+  370  ls
+  371  git clone git@github.com:gopal1409/python-docker-app1.git
+  372  cd emart/emart-onlineshoping-k8s/
+  373  ls
+  374  cat Dockerfile
+  375  cd
+  376  git clone git@github.com:sureshgadupu/sb-docker-compose.git
+  377  ls
+  378  cd emart
+  379  ls
+  380  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  381  mysql -uroot -predhat
+  382  ls
+  383  cd ..
+  384  ls
+  385  mysql -uroot -predhat
+  386  ls
+  387  cd emart
+  388  ls
+  389  cd emart-onlineshoping-k8s/
+  390  ls
+  391  mvn clean package
+  392  docker images
+  393  docker build -t emart-onlineshopping-app
+  394  docker build -t emart-onlineshopping-app .
+  395  docker images
+  396  docker tag 5c02e55e0755 santhakumari94/emart-onlineshopping-app
+  397  docker images
+  398  docker login
+  399  docker push santhakumari94/emart-onlineshopping-ap
+  400  docker push santhakumari94/emart-onlineshopping-app
+  401  docker ps
+  402  docker images
+  403  history
+  404  docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 -v sonarqube-conf:/opt/sonarqube/conf -v sonarqube-data:/opt/sonarqube/data -v sonarqube-logs:/opt/sonarqube/logs -v sonarqube-extensions:/opt/sonarqube/extensions sonarqube
+  405  docker ps -a
+  406  docker container start 89fff7167150
+  407  docker ps -a
+  408  ls
+  409  cd emart
+  410  ls
+  411  cd emart-onlineshoping-k8s/;
+  412  ls
+  413  cat src/main/resources/application.properties
+  414  mvn clean package
+  415  cat src/main/resources/application.properties
+  416  clear
+  417  docker ps -a
+  418  docker start 89fff7167150
+  419  docker ps -a
+  420  docker ps
+  421  docker ps -a
+  422  docker start 89fff7167150
+  423  docker ps -a
+  424  id
+  425  hostname
+  426  docker start 89fff7167150
+  427  docker ps
+  428  docker ps -a
+  429  systemctl restart docker
+  430  docker ps
+  431  docker ps -a
+  432  docker start 89fff7167150
+  433  docker ps
+  434  docker exec -it 89fff7167150 bash
+  435  hostIP
+  436  hostname
+  437  docker ps -a
+  438  docker stop 89fff7167150
+  439  docker container prune
+  440  docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 -v sonarqube-conf:/opt/sonarqube/conf -v sonarqube-data:/opt/sonarqube/data -v sonarqube-logs:/opt/sonarqube/logs -v sonarqube-extensions:/opt/sonarqube/extensions sonarqube
+  441  docker ps
+  442  curl localhost
+  443  curl localhost:9000
+  444  docker ps
+  445  docker ps -a
+  446  docker start fe4972efa598
+  447  clear
+  448  history
