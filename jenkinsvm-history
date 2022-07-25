@@ -1,0 +1,753 @@
+root@jenkinsvm:~# history
+    1  apt update -y
+    2  apt install default-jdk -y
+    3  apt install -y maven
+    4  java --version
+    5  maven --version
+    6  mvn --version
+    7  apt update -y
+    8  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    9  sudo mkdir -p /etc/apt/keyrings
+   10  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   11  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   12  apt update -y
+   13  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   14  docker --version
+   15  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   16  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   17  apt update -y
+   18  sudo apt-get install jenkins
+   19  systemctl status jenkins
+   20  cat /var/lib/jenkins/secrets/initialAdminPassword
+   21  cat /var/lib/jenkins/workspace/my-first-job
+   22  ssh-keygen -t rsa
+   23  cat /root/.ssh/id_rsa.pub
+   24  git clone https://github.com/Santhakumari94/testing-repo.git
+   25  git remote add origin https://github.com/Santhakumari94/myapp-jekins-lab.git
+   26  git remote add origin git@github.com:Santhakumari94/myapp-jekins-lab.git
+   27  ls
+   28  cd testing-repo/
+   29  git remote add origin git@github.com:Santhakumari94/myapp-jekins-lab.git
+   30  git status
+   31  cd ..
+   32  git clone git@github.com:Santhakumari94/myapp-jekins-lab.git
+   33  cp -r testing-repo/* myapp-jekins-lab/
+   34  cd myapp-jekins-lab/
+   35  ls
+   36  git status
+   37  git add .
+   38  git commit -m "first commit"
+   39  git push
+   40  cd
+   41  cd /var/lib/jenkins/workspace/my-first-job
+   42  ls
+   43  cd ..
+   44  ls
+   45  cat /root/.ssh/id_rsa.pub
+   46  cat /root/.ssh/id_rsa
+   47  ls /var/lib/jenkins/workspace/maven
+   48  cd /var/lib/jenkins/workspace/
+   49  ls
+   50  cd maven\ project
+   51  ls
+   52  mvn --version
+   53  systemctl restart jenkins
+   54  ls
+   55  cd target/
+   56  ls
+   57  cd surefire-reports/
+   58  ls
+   59  pwd
+   60  ls
+   61  cd myapp-jekins-lab/
+   62  ls
+   63  cd src/test/java/
+   64  ls
+   65  mv TheEmartApp emartapp
+   66  ls
+   67  git add .
+   68  git commit -m "modified"
+   69  git push
+   70  git commit -m "modified"
+   71  git push --fource
+   72  git status
+   73  git push --force
+   74  ls
+   75  ls -l
+   76  date
+   77  ls -l
+   78  ls
+   79  cd
+   80  cd /var/lib/jenkins/workspace/second-pipeline/target
+   81  ls
+   82  cd
+   83  git clone git@github.com:Santhakumari94/emart-onlineshoping-k8s.git
+   84  ls
+   85  cd emart-onlineshoping-k8s/
+   86  git remove remote origin
+   87  git remote remove origin
+   88  git remote add origin git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+   89  git status
+   90  git init
+   91  git status
+   92  git remote add origin git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+   93  git status
+   94  cd ..
+   95  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+   96  ls
+   97  cp emart-onlineshoping-k8s/* emart-onlineshopping-k8s-pvt/
+   98  cp -r emart-onlineshoping-k8s/* emart-onlineshopping-k8s-pvt/
+   99  cd emart-onlineshopping-k8s-pvt/
+  100  ls
+  101  git status
+  102  git add .
+  103  git commit -m "first commit"
+  104  git push
+  105  docker ps
+  106  sudo docker exec -it nexus-nexus-1 cat /nexus-data/admin.password
+  107  ls
+  108  cd emart-onlineshopping-k8s-pvt/
+  109  git pull
+  110  mvn clean package
+  111  ls
+  112  cd emart-onlineshopping-k8s-pvt/
+  113  ls
+  114  cd
+  115  ls
+  116  cd emart-onlineshopping-k8s-pvt/
+  117  ls
+  118  cd src/test/java/
+  119  ls
+  120  mv TheEmartApp/ emartapp
+  121  ls
+  122  vi emartapp/TheEmartAppApplicationTests.java
+  123  git status
+  124  git add .
+  125  git commit -m "modified package name"
+  126  git push
+  127  cd
+  128  mkdir nexus
+  129  cd nexus/
+  130  vi docker-compose.yml
+  131  docker compose up -d
+  132  docker compose logs --follow
+  133  ls
+  134  cd myapp-jekins-lab/
+  135  ls
+  136  mvn verify
+  137  git pull
+  138  mvn verify
+  139  cd
+  140  ls
+  141  mkdir pvt
+  142  cd pvt/
+  143  git clone https://github.com/Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  144  git clone git remote add origin git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  145  git remote add origin git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  146  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  147  cd emart-onlineshopping-k8s-pvt/
+  148  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  149  rm -f emart-onlineshopping-k8s-pvt/
+  150  rmdir -r emart-onlineshopping-k8s-pvt/
+  151  rmdir emart-onlineshopping-k8s-pvt/
+  152  ls
+  153  ls emart-onlineshopping-k8s-pvt/
+  154  rmdir -f emart-onlineshopping-k8s-pvt/
+  155  rmdir -rf emart-onlineshopping-k8s-pvt/
+  156  rmdir emart-onlineshopping-k8s-pvt/
+  157  cd
+  158  mkdir jenkins_lab
+  159  cd jenkins_lab/
+  160  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  161  cd  emart-onlineshopping-k8s-pvt/
+  162  cd
+  163  cp myapp-jekins-lab/* jenkins_lab/emart-onlineshopping-k8s-pvt/
+  164  cp -r myapp-jekins-lab/* jenkins_lab/emart-onlineshopping-k8s-pvt/
+  165  cd jenkins_lab/emart-onlineshopping-k8s-pvt/
+  166  ls
+  167  git status
+  168  git add .
+  169  git commit -m "first commit"
+  170  git push
+  171  ls
+  172  ls target/
+  173  mvn package
+  174  ls
+  175  cd src/main/resources/
+  176  l
+  177  vi application.properties
+  178  cd..
+  179  cd ..
+  180  cd..
+  181  cd ..
+  182  ls
+  183  git status
+  184  git add pom.xml src/main/resources/application.properties
+  185  git status
+  186  git commit -m "added mysql configs"
+  187  git push
+  188  git status
+  189  mvn package
+  190  git add .
+  191  git commit -m "modified"
+  192  git push
+  193  git statush
+  194  git status
+  195  mvn verify
+  196  mvn -Dskiptests verify
+  197  mvn -Dmaven.test.failure.ignore=true clean package
+  198  mvn verify
+  199  mvn -Dmaven.test.failure.ignore=true clean package
+  200  ls
+  201  ls target/
+  202  rm target/TheEmartApp-0.0.1-SNAPSHOT.jar
+  203  ls target/
+  204  mvn -Dmaven.test.failure.ignore=true clean package
+  205  ls target/
+  206  docker --version
+  207  docker images
+  208  ls
+  209  cd jenkins_lab/
+  210  cd emart-onlineshopping-k8s-pvt/
+  211  ls
+  212  docker build -t emartshop .
+  213  cat Dockerfile
+  214  docker images
+  215  docker tag 801af75801b6 Santhakumari94/emartshop
+  216  docker tag 801af75801b6 santhakumari94/emartshop
+  217  docker images
+  218  docker login
+  219  docker push santhakumari94/emartshop
+  220  mvn package
+  221  ls
+  222  vi src/main/resources/application.properties
+  223  mvn package
+  224  mvn clean package
+  225  vi src/main/resources/application.properties
+  226  mvn clean package
+  227  cd /etc/docker/
+  228  ls
+  229  vi daemon.json
+  230  cat daemon.json
+  231  systemctl restart jenkins
+  232  systemctl status jenkins
+  233  docker info
+  234  systemctl status jenkins
+  235  docker info
+  236  cat daemon.json
+  237  ls
+  238  vi daemon.json
+  239  systemctl status jenkins
+  240  systemctl restart jenkins
+  241  systemctl status jenkins
+  242  docker info
+  243  cat daemon.json
+  244  docker login 20.106.186.255:8085
+  245  docker ps
+  246  docker restart docker
+  247  systemctl restart docker
+  248  docker info
+  249  docker login 20.106.186.255:8085
+  250  systemctl restart docker
+  251  systemctl restart jenkins
+  252  docker login 20.106.186.255:8085
+  253  docker info
+  254  systemctl restart docker
+  255  docker images
+  256  cd
+  257  ssh-keygen -t rsa
+  258  cat /root/.ssh/id_rsa.pub
+  259  ssh root@dockeruser
+  260  ssh root@jenkinsuser
+  261  ssh root@jenkinsclient
+  262  cd /root/.ssh/
+  263  ls
+  264  ssh root@jenkinsclient
+  265  cd
+  266  ssh root@jenkinsansiblevm1
+  267  git clone git@github.com:gopal1409/springboot-chat-app.git
+  268  ls
+  269  cd springboot-chat-app/
+  270  ls
+  271  vi tomcat.yml
+  272  vi ansible.cfg
+  273  vi host.inv
+  274  ls
+  275  cd ..
+  276  git clone git@github.com:Santhakumari94/jenkins-ansible-chatapp.git
+  277  cp springboot-chat-app/* jenkins-ansible-chatapp/
+  278  cp -r springboot-chat-app/* jenkins-ansible-chatapp/
+  279  cd jenkins-ansible-chatapp/
+  280  ls
+  281  git status
+  282  git add .
+  283  git commit -m "first commit"
+  284  git push
+  285  apt install ansible -y
+  286  ansible -version
+  287  ansible --version
+  288  cd
+  289  which ansible
+  290  cd jenkins-ansible-chatapp/
+  291  ls
+  292  cd
+  293  cat /root/.ssh/id_rsa
+  294  systemctl restart jenkins
+  295  vi /etc/host
+  296  vi /etc/hosts
+  297  maven --version
+  298  ansible --version
+  299  systemctl restart jenkins
+  300  cd /var/lib/jenkins
+  301  ls
+  302  cd workspace/
+  303  ls
+  304  cd ansible-pipeline
+  305  ls
+  306  vi tomcat.yml
+  307  ls
+  308  cd templates/
+  309  ls
+  310  vi tomcat.service.j2
+  311  cd
+  312  cd /var/lib/jenkins/
+  313  ls
+  314  cd workspace/
+  315  ls
+  316  cd
+  317  git clone https://github.com/gopal1409/jenkins-ansible-tomcat.git
+  318  ls
+  319  rm -rf jenkins-ansible-tomcat/
+  320  ls
+  321  git clone https://github.com/gopal1409/jenkins-ansible-tomcat.git
+  322  cd jenkins-ansible-tomcat/
+  323  rm -rf .git
+  324  git init
+  325  git add .
+  326  git reset
+  327  git pull
+  328  cd
+  329  rm -rf jenkins-ansible-tomcat/
+  330  git clone https://github.com/gopal1409/jenkins-ansible-tomcat.git
+  331  ls jenkins-ansible-tomcat/
+  332  cd jenkins-ansible-tomcat/
+  333  git remote remove origin
+  334  git init
+  335  git remote add origin git@github.com:Santhakumari94/multibuild-jenkins-pipeline.git
+  336  git push
+  337  git push --set-upstream origin master
+  338  vi Jenkinsfile
+  339  git branch
+  340  git branch docker
+  341  git branch
+  342  git checkout docker
+  343  git checkout master
+  344  ls
+  345  git branch
+  346  vi Jenkinsfile
+  347  git status
+  348  git add .
+  349  git commit -m "added jenkins file"
+  350  git push -u origin master
+  351  git checkout docker
+  352  ls
+  353  vi Jenkinsfile
+  354  git status
+  355  git add .
+  356  git commit -m "added jenkins file"
+  357  git push origin docker
+  358  git branch ansible
+  359  git checkout ansible
+  360  git branch
+  361  vi Jenkinsfile
+  362  git status
+  363  git add .
+  364  git commit -m "added jenkins file"
+  365  git push origin ansible
+  366  apt update -y
+  367  apt install mysql-server mysql-client
+  368  git branc
+  369  git branch
+  370  ls
+  371  cd jenkins_lab/
+  372  ls
+  373  cd
+  374  cd pvt/
+  375  ls
+  376  cd
+  377  cd nexus/
+  378  ls
+  379  cd
+  380  git clone git@github.com:Santhakumari94/multibuild-jenkins-pipeline.git
+  381  cd multibuild-jenkins-pipeline/
+  382  ls
+  383  git branch
+  384  git checkout docker
+  385  git fetch from origin
+  386  git fetch origin
+  387  git checkout docker
+  388  git branch
+  389  git checkout ansible
+  390  git branch
+  391  git branch master
+  392  git master
+  393  git checkout master
+  394  git branch
+  395  mkdir sec_files && cd sec_files
+  396  echo "username=Santhakumari94" > file1
+  397  echo "secure-Santha94@123" > password.txt
+  398  echo "apikey=AizaSyCqhjgrPtr_La56sdUkjfav_laCqhjgrPtr_2s" > file2
+  399  cp /root/.ssh/id_rsa .
+  400  ls
+  401  curl https://thoughtworks.github.io/talisman/install.sh > ~/install-talisman.sh
+  402  cd
+  403  l
+  404  chmod +x ~/install-talisman.sh
+  405  cd multibuild-jenkins-pipeline/
+  406  ls
+  407  git status
+  408  git add .
+  409  git commit -m "install tailsamn"
+  410  git push -u origin master
+  411  git status
+  412  systemctl status talisman
+  413  curl https://thoughtworks.github.io/talisman/install.sh > ~/install-talisman.sh
+  414  chmod +x ~/install-talisman.sh
+  415  ~/install-talisman.sh
+  416  cp /root/.ssh/id_rsa .
+  417  git statis
+  418  git status
+  419  git add .
+  420  git commit -m "testing tailsman"
+  421  git push -u origin master
+  422  cd sec_files/
+  423  cp /root/.ssh/id_rsa .
+  424  git staus
+  425  git status
+  426  cp /root/.ssh/id_rsa.pub .
+  427  git status
+  428  git add .
+  429  git commit -m "created file"
+  430  git push -u origin master
+  431  cd ..
+  432  git push -u origin master
+  433  cd sec_files/
+  434  ls
+  435  cd ..
+  436  curl https://thoughtworks.github.io/talisman/install.sh > ~/install-talisman.sh
+  437  ~/install-talisman.sh
+  438  ./install-talisman.sh
+  439  curl https://thoughtworks.github.io/talisman/install.sh > ./install-talisman.sh
+  440  ./install-talisman.sh
+  441  chmod +x ./install-talisman.sh
+  442  ./install-talisman.sh
+  443  cp /root/.ssh/id_rsa /root/springboot-chat-app/sec_files/
+  444  git status
+  445  git add .
+  446  git commit -m "test file"
+  447  rm sec_files/id_rsa
+  448  cp /root/.ssh/id_rsa /root/springboot-chat-app/sec_files/
+  449  cp /root/.ssh/id_rsa sec_files/
+  450  git status
+  451  git status master
+  452  git add .
+  453  git commit -m "test"
+  454  git push -u origin master
+  455  cd
+  456  git clone git@github.com:gopal1409/python-docker-app1.git
+  457  ls
+  458  cd python-docker-app1/
+  459  ls
+  460  docker compose up -d
+  461  git pull
+  462  docker compose down
+  463  docker compose -f docker-compose.test.yml -p ci up
+  464  docker compose down
+  465  cd
+  466  git clone git@github.com:sureshgadupu/sb-docker-compose.git
+  467  l
+  468  ls
+  469  cd sb-docker-compose/
+  470  ls
+  471  apt install azure-cli
+  472  apt update -y
+  473  apt install azure-cli
+  474  az aks install-cli
+  475  az login
+  476  az group create --name aks-rg --location eastusa
+  477  az group create --name aks-rg --location eastus
+  478  az aks create -g aks-rg -n aks-kubernetes --node-count 2
+  479  az aks get-credentials  aks-rg --name aksdemo1
+  480  kubectl
+  481  az aks get-credentials --resource-group aks-rg --name aksdemo1
+  482  kubectl get nodes
+  483  kubectl get pod
+  484  cat /root/.kube/config
+  485  clear
+  486  ls
+  487  az login
+  488  kubectl
+  489  az aks get-credentials --resource-group aks-rg --name aksdemo1
+  490  cat /root/.kube/config
+  491  kubectl get deploy
+  492  kubectl expose deploy chatapp-deployment --type=LoadBalancer --port=8080
+  493  kubectl get svc
+  494  ls
+  495  cd emart-onlineshopping-k8s-pvt/
+  496  ls
+  497  git status
+  498  cat src/main/resources/application.properties
+  499  ls
+  500  c
+  501  cd
+  502  ls
+  503  cd jenkins_lab/
+  504  ls
+  505  cd emart-onlineshopping-k8s-pvt/
+  506  git status
+  507  cat src/main/resources/application.properties
+  508  cd
+  509  mkdir demo
+  510  cd demo/
+  511  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+  512  cd emart-onlineshopping-k8s-pvt/
+  513  ls
+  514  mvn clean package
+  515  systemctl status mysql
+  516  mysql -uroot -predhat
+  517  mvn clean package
+  518  ssh root@jenkinsansiblevm1
+  519  systemctl status mysql
+  520  mysql -u root -p redhat
+  521  mysql -u root -predhat
+  522  ls
+  523  cd jenkins_lab/
+  524  ls
+  525  cd
+  526  cd testing-repo/
+  527  cat src/main/resources/application.properties
+  528  git pull
+  529  cat src/main/resources/application.properties
+  530  cd
+  531  git clone git@github.com:Santhakumari94/emar-onlineshopping-repo.git
+  532  git clone git@github.com:Santhakumari94/emart-onlineshopping-repo.git
+  533  cd emart-onlineshopping-repo/
+  534  ls
+  535  vi src/main/resources/application.properties
+  536  cd src/main/resources/templates/
+  537  ls
+  538  vi stock-list.html
+  539  cd ../..
+  540  vi pom.xml
+  541  git status
+  542  mvn clean package
+  543  vi src/main/resources/application.properties
+  544  mvn clean package
+  545  mysql -uroot -p
+  546  mvn clean package
+  547  kubectl get pod
+  548  kubectl get deploy
+  549  kubectl get deploy -o wide
+  550  kubectl get svc
+  551  cd ..
+  552  cat /root/.ssh/id_rsa.pub
+  553  ssh root@emartclient
+  554  vi /etc/hosts
+  555  ls
+  556  cd emart-onlineshopping-repo/
+  557  ls
+  558  vi ansible.cfg
+  559  vi dev.inv
+  560  mkdir templates
+  561  cd templates/
+  562  vi tomcat.service.j2
+  563  cd ..
+  564  vi tomcat.yml
+  565  git status
+  566  git add .
+  567  git commit -m "added files"
+  568  git status
+  569  git push
+  570  cd /var/lib/jenkins/workspace/
+  571  ls
+  572  cd emart-onlineshopping-docker-nexus
+  573  ls
+  574  cd ..
+  575  cd ansible-pipeline
+  576  ls
+  577  ssh root@jenkinsansiblevm1
+  578  az login
+  579  history
+  580  az group create --name emart-aks-rg --location eastus
+  581  az aks create -g emart-aks-rg -n aks-kubernetes --node-count 2
+  582  kubectl get doeploy
+  583  kubectl get deploy
+  584  az logout
+  585  kubectl get deploy
+  586  kubectl get pod
+  587  ls
+  588  cd emart-onlineshopping-repo/
+  589  ls
+  590  git status
+  591  kubectl get deploy
+  592  az logout
+  593  kubectl get deploy
+  594  az login
+  595  cd
+  596  az aks get-credentials  emart-aks-rg --name emartdemo
+  597  az aks get-credentials --resource-group emart-aks-rg --name emartdemo
+  598  cat /root/.kube/config
+  599  cd emart-onlineshopping-repo/
+  600  ls
+  601  cat src/main/resources/application.properties
+  602  mvn clean package
+  603  git status
+  604  docker build -t emart-app-repo
+  605  docker build -t emart-app-repo .
+  606  docker images
+  607  docker tag d31577c8858e santhakumari94/emart-app-repo
+  608  docker login
+  609  docker images
+  610  docker push santhakumari94/emart-app-repo
+  611  kubectl delete deploy mysql
+  612  kubectl delete svc mysql
+  613  kubectl delete deploy emart-webapp
+  614  kubectl delete pvc task-pv-claim
+  615  kubectl delete pv task-pv-volume
+  616  kubectl delete configmap emart-dbcreation-script
+  617  mysql -u root -predhat
+  618  kubectl exec -it mysql-76f566789c-m88qp /bin/bash
+  619  clear
+  620  az login
+  621  kubectl
+  622  kubectl get pod
+  623  kubectl get deploy
+  624  az aks create -g emart-aks-rg -n aks-kubernetes --node-count 2
+  625  kubectl get deploy
+  626  kubectl get nodes
+  627  az aks get-credentials --resource-group emart-aks-rg --name emartdemo
+  628  kubectl get nodes
+  629  ls
+  630  cd emart-onlineshopping-repo/
+  631  git pull
+  632  ls
+  633  systemctl status mysql
+  634  kubectl get pod
+  635  az aks get-credentials --resource-group aks-emartrg --name emartdemo1
+  636  kubectl get nodes
+  637  ls
+  638  kubectl apply pv.yml
+  639  kubectl apply -f pv.yml
+  640  kubectl apply -f pvc.yml
+  641  kubectl apply -f configmap.yml
+  642  kubectl apply -f mysqlsecret.yml
+  643  kubectl apply -f mysql-deployment.yml
+  644  vi mysql-deployment.yml
+  645  kubectl apply -f mysql-deployment.yml
+  646  vi mysql-cluster-service.yml
+  647  kubectl apply -f mysql-cluster-service.yml
+  648  kubectl get pod
+  649  ls
+  650  kubectl get pod -o wide
+  651  vi emart-deployment.yml
+  652  kubectl apply -f emart-deployment.yml
+  653  cat service.yml
+  654  vi service.yml
+  655  kubectl apply -f service.yml
+  656  kubectl get svc
+  657  cat service.yml
+  658  vi service.yml
+  659  kubectl apply -f service.yml
+  660  kubectl get svc
+  661  kubectl describe myapp-service
+  662  kubectl get svc
+  663  kubectl describe myapp-service
+  664  kubectl describe myapp-service
+  665  kubectl describe svc myapp-service
+  666  vi service.yml
+  667  cat service.yml
+  668  cat emart-deployment.yml
+  669  wq!
+  670  kubectl get pod
+  671  kubectl describe pod emart-webapp-58dd684499-8qvlq
+  672  kubectl get pod
+  673  kubectl logs emart-webapp-58dd684499-8qvlq
+  674  kubectl get pod
+  675  ls
+  676  vi emart-deployment.yml
+  677  kubectl get pod
+  678  kubectl get svc
+  679  cat configmap.yml
+  680  kubectl apply -f emart-deployment.yml
+  681  kubectl get pod
+  682  kubectk logs emart-webapp-64c697474f-rrmrk
+  683  kubectl logs emart-webapp-64c697474f-rrmrk
+  684  kubectkubelctl  gegt estvc
+  685  kubectl get svc
+  686  kubectl describe svc myapp-service
+  687  kubectl get pod -o wide
+  688  vi service.yml
+  689  kubectl apply -f service.yml
+  690  kubectl get svc
+  691  git status
+  692  git add .
+  693  git commit -m "added loadbalancer"
+  694  git push -u origin main
+  695  az aks get-credentials --resource-group aks-emartrg --name emartdemo1
+  696  cat /root/.kube/config
+  697  docker images
+  698  mysql -u root -p redhat
+  699  mysql -u root -proot
+  700  mysql -uroot -p redhat
+  701  systemctl status
+  702  systemctl status mysql
+  703  mysql -uroot -p
+  704  kubectl get pod
+  705  docker ps -a
+  706  cd emart-onlineshopping-repo/
+  707  git remote remove origin
+  708  git remote add origin https://github.com/Santhakumari94/emat-aks-repo.git
+  709  git branch -M master
+  710  git push -u origin master
+  711  docker run -d -p 3306:3306 --name=db --env="MYSQL_ROOT_PASSWORD=redhat" --env="MYSQL_USERNAME=root" --env="MYSQL_DATABASE=webappdb" mysql
+  712  docker run -d -p 3307:3306 --name=db --env="MYSQL_ROOT_PASSWORD=redhat" --env="MYSQL_USERNAME=root" --env="MYSQL_DATABASE=webappdb" mysql
+  713  docker run -d -p 3307:3306 --name=mysql --env="MYSQL_ROOT_PASSWORD=redhat" --env="MYSQL_USERNAME=root" --env="MYSQL_DATABASE=webappdb" mysql
+  714  docker ps -a
+  715  docker ps
+  716  docker rm db
+  717  docker rm fbc93f2210e1
+  718  docker rm fbc93f2210e1 --fource
+  719  docker rm fbc93f2210e1 --force
+  720  docker run -d -p 3306:3306 --name=mysql --env="MYSQL_ROOT_PASSWORD=redhat" --env="MYSQL_USERNAME=root" --env="MYSQL_DATABASE=webappdb" mysql
+  721  systemctl status mysql
+  722  mvn clean package
+  723  git branch
+  724  git status
+  725  git push -u origin master
+  726  cd ..
+  727  ls
+  728  cd jenkins_lab/
+  729  ls
+  730  git clone https://github.com/Santhakumari94/emart-onlineshopping-repo.git
+  731  git branch
+  732  mvn clean package
+  733  cd emart-onlineshopping-
+  734  cd emart-onlineshopping-repo/
+  735  mvn clean package
+  736  git branch
+  737  az login
+  738  kubectl get pod
+  739  kubectl get nodes
+  740  docker ps -a
+  741  history
+  742  az aks get-credentials --resource-group aks-emartrg --name emartdemo1
+  743  kubectl get nodes
+  744  systemctl restart docker
+  745  docker ps
+  746  az aks get-credentials --resource-group aks-emartrg --name emartservice
+  747  cat  /root/.kube/config
+  748  kubectl
+  749  kubectl get nodes
+  750  kubectl get pod
+  751  kubectl get nodes
+  752  history
