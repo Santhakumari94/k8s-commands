@@ -1,0 +1,1001 @@
+root@k8smaster:~# history
+  492  kubectl apply -f chatapp-deployment.yml
+  493  kubectl get pod
+  494  kubectl expose pod myapp1-deployment-689959889c-4plc6 --type=NodePort --port=8080 --name=my-db5-service
+  495  kubectl get svc
+  496  kubectl logs get myapp1-deployment-689959889c-4plc6
+  497  kubectl logs myapp1-deployment-689959889c-4plc6
+  498  kubectl get pod
+  499  kubectl apply -f chatapp-deployment.yml
+  500  kubectl get pod
+  501  vi chatapp-deployment.yml
+  502  kubectl apply -f chatapp-deployment.yml
+  503  kubectl get pod
+  504  kubectl logs myapp1-deployment-8646f46fdc-sndng
+  505  kubectl get pod
+  506  kubectl get svc
+  507  kubeclt get deploy
+  508  kubectl get deploy
+  509  kubectl delete deploy usermgmt-webapp
+  510  cd ..
+  511  cd k8s/sapient-deploy-manifest/
+  512  ls
+  513  kubectl apply -f usermgmtwebapp.yml
+  514  kubectl get pod
+  515  kubectl expose pod usermgmt-webapp-79487db97-srjlg  --type=NodePort --port=8080 --name=my-db6-service
+  516  kubectl get svc
+  517  cd charts/my-nginx/
+  518  tree
+  519  watch kubectl get all
+  520  kubectl get pod
+  521  kubectl get pod -o wide
+  522  cd k8s/sapient-deploy-manifest/
+  523  vi usermgmtwebapp.yml
+  524  kubectl apply -f usermgmtwebapp.yml
+  525  kubectl get pod -o wide
+  526  vi usermgmtwebapp.yml
+  527  kubectl apply -f usermgmtwebapp.yml
+  528  kubectl get pod -o wide
+  529  kubectl expose pod usermgmt-webapp-5479d54669-pqvv5 --type=NodePort --port=8080 --name=my-db10-service
+  530  kubectl get svc
+  531  cd ..
+  532  ls
+  533  cd ..
+  534  ls
+  535  cd k8s/
+  536  ls
+  537  cd usermanagement-app-k8s/
+  538  ls
+  539  cd ..
+  540  cd sapient-deploy-manifest/
+  541  ls
+  542  vi usermgmtwebapp.yml
+  543  kubectl get pod -o wide
+  544  kubectl logs usermgmt-webapp-5479d54669-pqvv5
+  545  cd ..
+  546  mkdir today_date
+  547  ls
+  548  mkdir today_$date
+  549  ls
+  550  cd today_date/
+  551  git clone https://github.com/gopal1409/sapient-deploy-manifest.git
+  552  cd sapient-deploy-manifest/
+  553  ls
+  554  kubectl apply -f 01.mysql-state-secret.yml
+  555  kubectl get secret
+  556  kubectl describe my-db-state
+  557  kubectl describe get my-db-state
+  558  kubectl describe secret my-db-state
+  559  ls
+  560  kubectl apply -f 02.pv-state.yml
+  561  kubectl apply -f 03-pvc-state.yml
+  562  kubectl get pv
+  563  kubectl get pvc
+  564  kubectl apply -f 04-mysql-state.yml
+  565  git pull
+  566  kubectl apply -f 04-mysql-state.yml
+  567  kubectl get statefulset
+  568  kubectl describe statefulset
+  569  kubectl get pod
+  570  kubectl get deploy
+  571  kubectl delete deploy myapp1-deployment
+  572  kubectl get pod
+  573  kubectl get statefulset
+  574  kubectl delete statefulset mysql-set
+  575  kubectl get pvc
+  576  kubectl delete pvc mysql-store-mysql-set-0
+  577  kubectl get pvc
+  578  kubectl delete pvc task-pv-claim-state
+  579  kubectl get pv
+  580  ls
+  581  kubectl apply -f 03-pvc-state.yml
+  582  git pull
+  583  kubectl get pod
+  584  kubectl apply -f 04-mysql-state.yml
+  585  kubectl get pod
+  586  kubectl get statefulset
+  587  kubectl get pod
+  588  kubectl get pv
+  589  kubectl get pvc
+  590  kubectl apply -f 03-pvc-state.yml
+  591  kubectl get pvc
+  592  kubectl get pv
+  593  kubectl delete pv task-pv-volume-state
+  594  kubectl get pvc
+  595  kubectl delete pvc task-pv-claim-state
+  596  kubectl get statefulset
+  597  kubectl delete statefulset mysql-set
+  598  kubectl get pod
+  599  kubectl get deploy
+  600  git pull
+  601  kubectl apply -f 01.mysql-state-secret.yml
+  602  kubectl apply -f 02
+  603  kubectl apply -f 02.pv-state.yml
+  604  kubectl apply -f 03-pvc-state.yml
+  605  kubectl apply -f 04
+  606  kubectl apply -f 04-mysql-state.yml
+  607  kubectl get pod
+  608  kubectl get statefulset
+  609  cd ..
+  610  ls
+  611  git clone https://github.com/Santhakumari94/mysql-deployment-k8s.git
+  612  cd sapient-deploy-manifest/ls
+  613  ls
+  614  cd sapient-deploy-manifest/
+  615  ls
+  616  cd ..
+  617  cd mysql-deployment-k8s/
+  618  ls
+  619  kubectl get deploy
+  620  kubectl delete deploy mysql-deployment
+  621  kubectl delete deploy usermgmt-webapp
+  622  kubectl get pod
+  623  kubectl get service
+  624  kubectl delete svc my-db10-service
+  625  kubectl delete svc my-db-service
+  626  kubectl delete svc my-db1-service
+  627  kubectl delete svc my-db2-service
+  628  kubectl delete svc my-db4-service
+  629  kubectl delete svc
+  630  kubectl delete svc my-db5-service
+  631  kubectl delete svc myapp-service
+  632  kubectl delete svc mysql-service
+  633  kubectl delete svc my-third-service
+  634  kubectl get service
+  635  kubectl delete svc my-db3-service
+  636  kubectl delete svc my-db6-service
+  637  kubectl delete svc my-first-service
+  638  kubectl delete svc my-second-service
+  639  kubectl get service
+  640  ls
+  641  cat mysqlclusterip.yaml
+  642  kubectl apply -f mysqlclusterip.yaml
+  643  vi mysql-deployment.yml
+  644  kubectl apply -f mysql-deployment.yml
+  645  kubectl get deploy
+  646  kubectl get pod
+  647  kubectl get pod -o wide
+  648  vi learnermgmtwebapp.yml
+  649  kubectl apply -f learnermgmtwebapp.yml
+  650  kubectl get pod -o wide
+  651  kubectl expose pod usermgmt-webapp-7555895b77-j2rqn --type=NodePort --port=8080 --name=my-db-service
+  652  kubectl get svc
+  653  wget https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
+  654  ls
+  655  mv helm-v3.9.0-linux-amd64.tar.gz /root/
+  656  ls
+  657  cd
+  658  ls
+  659  tar -xzvf helm-v3.9.0-linux-amd64.tar.gz
+  660  cd linux-amd64/
+  661  ls
+  662  mv helm /usr/bin/
+  663  helm
+  664  helm version
+  665  cd
+  666  mkdir charts/
+  667  ls
+  668  cd charts/
+  669  mkdir my-nginx
+  670  cd my-nginx/
+  671  vi Chart.yaml
+  672  mkdir templates
+  673  apt install tree -y
+  674  tree
+  675  kubectl get all
+  676  kubectl get deploy
+  677  kubectl delete deploy mysql
+  678  kubectl delete deploy usermgmt-webapp
+  679  kubectl get deploy
+  680  kubectl get pod
+  681  kubectl delete pod usermgmt-webapp-7555895b77-j2rqn
+  682  kubectl delete pod web-0
+  683  kubectl delete pod web-1
+  684  kubectl get all
+  685  kubectl get svc
+  686  kubectl delete svc nginx
+  687  kubectl delete svc mysql
+  688  kubectl delete svc my-db-service
+  689  kubectl get all
+  690  kubectl get pod
+  691  kubectl get statefulset
+  692  kubectl delete statefulset web
+  693  kubectl get pod
+  694  kubectl get all
+  695  pwd
+  696  kubectl create deploy my-nginx --image nginx --dry-run=client -o yaml > ./templates/deployment.yml
+  697  tree
+  698  helm install my-nginx .
+  699  tree
+  700  kubectl expose deploy my-nginx --port 80 --dry-run=client -o yaml > templates/service.yml
+  701  tree
+  702  vi Chart.yaml
+  703  helm upgrade my-nginx .
+  704  helm list
+  705  cd charts/my-nginx/
+  706  tree
+  707  helm list
+  708  heml rollback my-nginx 1
+  709  helm rollback my-nginx 1
+  710  tree
+  711  helm rollback my-nginx 2
+  712  tree
+  713  helm rollback my-nginx
+  714  tree
+  715  kubectl get svc
+  716  helm upgrade my-nginx .
+  717  kubectl get svc
+  718  helm rollback my-nginx 1
+  719  kubectl get svc
+  720  helm uninstall my-nginx
+  721  tree
+  722  helm list
+  723  helm install my-nginx .
+  724  helm list
+  725  kubectl get svc
+  726  kubectl get deploy
+  727  vi values.yaml
+  728  tree
+  729  vi templates/deployment.yml
+  730  help inspect values .
+  731  helm inspect values .
+  732  helm upgrade my-nginx --set replicaCount=2
+  733  helm upgrade my-nginx . --set replicaCount=2
+  734  kubectl get deploy
+  735  kubectl get pod
+  736  vi values.yaml
+  737  vi  templates/service.yml
+  738  helm upgrade my-nginx . --set service.type=NodePort
+  739  helm upgrade my-nginx . --set service.type=ClusterIP
+  740  helm upgrade my-nginx . --set service.type=LoadBalancer
+  741  helm upgrade my-nginx . --set service.type=ClusterIP
+  742  helm upgrade my-nginx . --set service.type=LoadBalancer
+  743  helm upgrade my-nginx . --set service.type=NodePort
+  744  helm upgrade my-nginx . --set service.type=ClusterIP
+  745  cat templates/deployment.yml
+  746  cat Chart.yaml
+  747  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+  748  ls
+  749  helm repo update
+  750  helm install mont prometheus-community/kube-prometheus-stack
+  751  kubectl get svc
+  752  kubectl edit svc mont-kube-prometheus-stack-prometheus
+  753  kubectl get svc
+  754  cd charts/my-nginx/
+  755  ls
+  756  tree
+  757  watch kubectl get all
+  758  docker login
+  759  docker version
+  760  cd k8s/sapient-deploy-manifest/
+  761  ls
+  762  vi deployment.yml
+  763  cd ..
+  764  cd sapient-deploy-manifest/
+  765  vi deployment.yml
+  766  kubectl apply -f deployment.yml
+  767  kubectl get pod
+  768  kubectl expose pod myapp-deployment-7645b79998-5v85v --type=NodePort --port=8080 --name=my-service1
+  769  kubectl get svc
+  770  cd sapient-deploy-manifest/
+  771  ls
+  772  cd ..
+  773  cd k8s/
+  774  ls
+  775  cd today_date/
+  776  ls
+  777  cd sapient-deploy-manifest/
+  778  ls
+  779  vi usermgmtwebapp.yml
+  780  cp usermgmtwebapp.yml myappdeployment.yml
+  781  vi myappdeployment.yml
+  782  kubectl get pod
+  783  kubectl get deploy
+  784  ls
+  785  kubectl apply -f pv.yml
+  786  kubectl apply -f pvc.yml
+  787  kubectl apply -f mysqlsecret.yml
+  788  kubectl apply -f service.yml
+  789  kubectl apply -f configmap.yml
+  790  kubectl apply -f mysqlsecret.yml
+  791  kubectl apply -f mysql-deployment.yml
+  792  kubectl get pod -o wide
+  793  vi mysql-deployment.yml
+  794  kubectl get pod -o wide
+  795  kubectl get deploy
+  796  kubectl delete deploy my-nginx
+  797  helm uninstall my-nginx
+  798  kubectl get pod
+  799  ls
+  800  kubectl get deploy
+  801  kubectl delete deploy mont-grafana\
+  802  kubectl delete deploy mont-kube-prometheus-stack-operator
+  803  kubectl delete deploy mont-kube-state-metrics
+  804  kubectl delete deploy myapp-deployment
+  805  kubectl delete deploy mysql
+  806  kubectl get deploy
+  807  kubectl get pod
+  808  kubectl delete pod alertmanager-mont-kube-prometheus-stack-alertmanager-0
+  809  kubectl delete pod myapp-deployment-7645b79998-5v85v
+  810  kubectl delete pod prometheus-mont-kube-prometheus-stack-prometheus-0
+  811  kubectl get pod
+  812  kubectl get deploy
+  813  cd k8s/today_date/
+  814  ls
+  815  cd mysql-deployment-k8s/
+  816  ls
+  817  cd ..
+  818  kubectl get ns
+  819  kubectl get pod --all-namespaces
+  820  kubectl create ns quota-mem-cpu-example
+  821  kubectl describe ns quota-mem-cpu-example
+  822  cd ..
+  823  mkdir wedn
+  824  cd wedn/
+  825  git clone https://github.com/gopal1409/sapient-deploy-manifest.git
+  826  cd sapient-deploy-manifest/
+  827  ls
+  828  kubectl apply -f quota-mem-cpu.yml --namespace=quota-mem-cpu-example
+  829  kubectl describe ns quota-mem-cpu-example
+  830  git pull
+  831  cd quota-mem-eg/
+  832  ls
+  833  kubectl apply -f pod.yml --namespace=quota-mem-cpu-example
+  834  kubectl get pod --namespace=quota-mem-cpu-example
+  835  kubectl describe --ns quota-mem-cpu-example
+  836  kubectl describe ns quota-mem-cpu-example
+  837  git pull
+  838  kubectl apply -f pod-hype.yml --namespace=quota-mem-cpu-example
+  839  git pull
+  840  kubectl apply -f pod-hype.yml --namespace=quota-mem-cpu-example
+  841  cat pod-hype.yml
+  842  cat pod.yml
+  843  ls
+  844  cat quota-mem-cpu.yml
+  845  kubectl run pod --image=busybox --command -o yaml --dry-run=client > pod.yml -- sh -c 'sleep 1d'
+  846  ls
+  847  cat pod.yml
+  848  kubectl -f pod.yml create
+  849  kubectl get pod
+  850  kubectl delete pod pod --force --grace-period 0
+  851  vi pod.yml
+  852  kubectl -f pod.yml
+  853  kubectl apply -f pod.yml
+  854  vi pod.yml
+  855  kubectl apply -f pod.yml
+  856  kubectl get pod
+  857  kubectl delete pod pod --force --grace-period 0
+  858  vi pod.yml
+  859  kubectl get pod
+  860  kubectl describe pod
+  861  kubectl describe podexit
+  862  cd
+  863  curl -L https://istio.io/downloadIstio | sh -
+  864  ls
+  865  cd istio-1.14.1/
+  866  istioctl install --set profile=demo -y
+  867  ls
+  868  cd
+  869  ls
+  870  istioctl install --set profile=demo -y
+  871  ./istioctl install --set profile=demo -y
+  872  export PATH=$PWD/bin:$PATH
+  873  istioctl install --set profile=demo -y
+  874  curl -L https://istio.io/downloadIstio | sh -
+  875  ls
+  876  cd istio-1.14.1/
+  877  istioctl install --set profile=demo -y
+  878  export PATH=$PWD/bin:$PATH
+  879  istioctl install --set profile=demo -y
+  880  istioctl install --set profile=minimal -y
+  881  istio
+  882  istio -version
+  883  kubectl get pod
+  884  kubectl get ns
+  885  kubectl get pod
+  886  kubectl logs usermgmt-webapp-5f5466c7b8-z6ncw
+  887  kubectl logs -f  usermgmt-webapp-5f5466c7b8-z6ncw
+  888  cd k8s/today_date/
+  889  ls
+  890  cd mysql-deployment-k8s/
+  891  ls
+  892  vi myapp.yml
+  893  vi learnermgmtwebapp.yml
+  894  kubectl apply -f learnermgmtwebapp.yml
+  895  kubectl get pod
+  896  kubectl expose pod usermgmt-webapp-7bfc854c7-znx9j --type=NodePort --port=8080 --name=my-first-service-2
+  897  kubectl get svc
+  898  ls
+  899  vi myapp.yml
+  900  kubectl apply -f myapp.yml
+  901  kubectl get pod
+  902  kubectl expose usermgmt-webapp-1-55b546646-s5pnb --type=NodePort --port=8080 --name=my-first-service-3
+  903  kubectl expose pod usermgmt-webapp-1-55b546646-s5pnb --type=NodePort --port=8080 --name=my-first-service-3
+  904  kubectl get svc
+  905  vi myapp.yml
+  906  kubectl get deploy
+  907  kubectl get pv
+  908  kubectl delete pv task-pv-volume
+  909  kubectl delete pv default/task-pv-claim
+  910  kubectl delete pv vikki-pv-volume
+  911  kubectl get pv
+  912  kubectl delete pv task-pv-volume
+  913  kubectl get pv
+  914  kubectl get pvc
+  915  kubectl delete pvc task-pv-claim
+  916  kubectl delete pvc vikki-pv-volume-claim
+  917  kubectl get pvc
+  918  kubectl get pv
+  919  kubectl get configmap
+  920  kubectl get secret
+  921  kubectl delete secret my-db-secret
+  922  kubectl get secret
+  923  kubectl get deploy
+  924  kubectl get pod
+  925  cd k8s/
+  926  ls
+  927  cd
+  928  ls
+  929  cd k8s/
+  930  ls
+  931  cd today_date/
+  932  ls
+  933  cd mysql-deployment-k8s/
+  934  ls
+  935  cat mysqlclusterip.yaml
+  936  cat service.yml
+  937  ls
+  938  clear
+  939  ls
+  940  kubectl apply -f pv.yml
+  941  kubectl apply -f pvc.yml
+  942  kubectl apply -f configmap.yml
+  943  kubectl apply -f mysqlsecret.yml
+  944  kubectl apply -f mysql-deployment.yml
+  945  kubectl apply -f mysqlclusterip.yaml
+  946  kubectl get deploy
+  947  kubectl get pod
+  948  kubectl get pod -o wide
+  949  ls
+  950  vi learnermgmtwebapp.yml
+  951  cp learnermgmtwebapp.yml myapp.yml
+  952  kubectl get pod -o wide
+  953  vi myapp.yml
+  954  kubectl get pod
+  955  kubectl apply -f myapp.yml
+  956  kubectl apply -f service.yml
+  957  kubectl get p
+  958  kubectl expose pod usermgmt-webapp-5f5466c7b8-z6ncw --type=NodePort --port=8080 --name=my-first-service-1
+  959  kubectl get pod -o wide
+  960  kubectl get svc
+  961  kudectl exec -t mysql-5495c77f58-5cw7w
+  962  kudectl exec -it mysql-5495c77f58-5cw7w /bin/bash
+  963  kubectl exec -it mysql-5495c77f58-5cw7w /bin/bash
+  964  kubectl get deploy
+  965  cd
+  966  cd /mnt/
+  967  ls
+  968  'ls
+  969  ls
+  970  cd
+  971  cd k8s/today_date/sapient-deploy-manifest/
+  972  ls
+  973  kubectl get deploy
+  974  kubectl delete deploy mysql
+  975  kubectl get pod
+  976  kubectl apply -f mysql-deployment.yml
+  977  kubectl get pod
+  978  kubectl get pod -o wide
+  979  kubectl delete deploy usermgmt-webapp-1
+  980  cd ..
+  981  cd mysql-deployment-k8s/
+  982  ls
+  983  vi myapp.yml
+  984  kubectl apply -f myapp.yml
+  985  kubectl get pod
+  986  kubectl exec -it pod mysql-5495c77f58-wm7g9 /bin/bash
+  987  cd k8s/today_date/
+  988  cd mysql-deployment-k8s/
+  989  vi myapp.yml
+  990  kubectl get pod
+  991  kubectl delete pod usermgmt-webapp-1-55b546646-s5pnb
+  992  kubectl apply -f mya
+  993  kubectl apply -f myapp.yml
+  994  kubectl get pod
+  995  ls
+  996  clear
+  997  ls
+  998  vi myapp.yml
+  999  kubectl get pod
+ 1000  kubectl delete pod usermgmt-webapp-1-5bf75bfc44-llqgs
+ 1001  kubectl get pod
+ 1002  kubectl get deploy
+ 1003  kubectl delete deploy usermgmt-webapp-1
+ 1004  kubectl get pod
+ 1005  kubectl apply -f myapp.yml
+ 1006  kubectl get pod
+ 1007  kubectl expose pod usermgmt-webapp-1-86b697c8c8-gr9n4 --type=NodePort --port=8080 --name=my-first-service-10
+ 1008  kubectl get svc
+ 1009  kubectl exec -it mysql-5495c77f58-5cw7w /bin/bash
+ 1010  kubectl get pod
+ 1011  kubectl exec -it mysql-5495c77f58-wm7g9 /bin/bash
+ 1012  ls
+ 1013  cd k8s/
+ 1014  ls
+ 1015  cd today_date/
+ 1016  ls
+ 1017  cd mysql-deployment-k8s/
+ 1018  ls
+ 1019  kubectl get deploy
+ 1020  kubectl delete deploy mysql
+ 1021  kubectl get pv
+ 1022  kubectl delete pv task-pv-volume
+ 1023  kubectl get pvc
+ 1024  kubectl delete pvc task-pv-claim
+ 1025  kubectl get config
+ 1026  kubectl get configmap
+ 1027  kubectl get secrete
+ 1028  kubectl get secret
+ 1029  kubectl delete secret my-db-secret
+ 1030  kubectl get pod
+ 1031  ls
+ 1032  kubectl apply -f pv.yml
+ 1033  kubectl apply -f pvc.yml
+ 1034  kubectl apply -f configmap.yml
+ 1035  kubectl apply -f mysqlsecret.yml
+ 1036  kubectl apply -f mysqlclusterip.yaml
+ 1037  vi mysql-deployment.yml
+ 1038  kubectl apply -f mysql-deployment.yml
+ 1039  kubectl get pod
+ 1040  kubectl get deploy
+ 1041  ls
+ 1042  cp learnermgmtwebapp.yml emart-deployment.yml
+ 1043  vi emart-deployment.yml
+ 1044  kubectl get pod -o wide
+ 1045  vi emart-deployment.yml
+ 1046  kubectl apply -f emart-deployment.yml
+ 1047  kubectl get pod -o wide
+ 1048  kubectl expose pod usermgmt-webapp-2-84dc949895-klmpm --type=NodePort --port=8080 --name=my-emart-service
+ 1049  kubectl get svc
+ 1050  kubectl get pod
+ 1051  kubectl exec pod -it mysql-5495c77f58-csj87 /bin/bash
+ 1052  kubectl exec -it pod mysql-5495c77f58-csj87 /bin/bash
+ 1053  kubectl exec pod mysql-5495c77f58-csj87 /bin/bash
+ 1054  history
+ 1055  kubectl get pod
+ 1056  kubectl exec -it mysql-5495c77f58-csj87 /bin/bash
+ 1057  ls
+ 1058  cd k8s/
+ 1059  cd today_date/mysql-deployment-k8s/
+ 1060  ls
+ 1061  kubectl get pod -o wide
+ 1062  vi learnermgmtwebapp.yml
+ 1063  kubectl get deploy
+ 1064  kubectl delete deploy usermgmt-webapp-1
+ 1065  kubectl get pod
+ 1066  kubectl delete pod usermgmt-webapp-1-75567754f6-dl8rh
+ 1067  kubectl apply -f learnermgmtwebapp.yml
+ 1068  kubectl get pod
+ 1069  kubectl get deploy
+ 1070  kubectl delete deploy usermgmt-webapp
+ 1071  kubectl get pod
+ 1072  kubectl apply -f learnermgmtwebapp.yml
+ 1073  kubectl get pod
+ 1074  kubectl expose pod usermgmt-webapp-6944c4fc78-22jsp --type=NodePort --port=8080 --name=my-user-service
+ 1075  kubectl get svc
+ 1076  kubectl get deploy
+ 1077  kubectl mysql deploy
+ 1078  kubectl delete deploy mysql
+ 1079  kubectl delete deploy usermgmt-webapp
+ 1080  kubectl delete deploy usermgmt-webapp-
+ 1081  kubectl get pv
+ 1082  kubectl delete pv task-pv-volume
+ 1083  kubectl get pv
+ 1084  kubectl get pvc
+ 1085  kubectl delete pvc task-pv-claim
+ 1086  kubectl get secret
+ 1087  kubectl delete secret my-db-secret
+ 1088  kubectl get configmap
+ 1089  kubectl delete configmap usermgmt-dbcreation-script
+ 1090  kubectl get deploy
+ 1091  ls
+ 1092  cd k8s/
+ 1093  ls
+ 1094  cd today_date/
+ 1095  ls
+ 1096  mkdir emart
+ 1097  cd mysql-deployment-k8s/
+ 1098  ls
+ 1099  cp learnermgmtwebapp.yml ../emart/cp
+ 1100  cp pv.yml ../emart/
+ 1101  cp pvc.yml ../emart/
+ 1102  cp mysqlclusterip.yaml ../emart/
+ 1103  cp mysqlsecret.yml ../emart/
+ 1104  cp service.yml ../emart/
+ 1105  cp configmap.yml ../emart/
+ 1106  cd ..
+ 1107  cd emart/
+ 1108  ls
+ 1109  cat pv.yml
+ 1110  cat pvc.yml
+ 1111  cat configmap.yml
+ 1112  vi configmap.yml
+ 1113  cat mysqlsecret.yml
+ 1114  ls
+ 1115  cd k8s/
+ 1116  cd today_date/
+ 1117  cd emart/
+ 1118  ls
+ 1119  mv learnermgmtwebapp.yml emart-deployment.yml
+ 1120  vi emart-deployment.yml
+ 1121  cd k8s/
+ 1122  la
+ 1123  cd today_date/
+ 1124  ls
+ 1125  cd mysql-deployment-k8s/
+ 1126  ls
+ 1127  kubectl get pod
+ 1128  kubectl get deploy
+ 1129  ls
+ 1130  cat configmap.yml
+ 1131  cd ..
+ 1132  ls
+ 1133  cd emart/
+ 1134  ls
+ 1135  vi emart-deployment.yml
+ 1136  kubectl apply -f pv.yml
+ 1137  kubectl apply -f pvc.yml
+ 1138  kubectl apply -f configmap.yml
+ 1139  kubectl apply -f mysqlsecret.yml
+ 1140  kubectl apply -f mysqlclusterip.yaml
+ 1141  kubectl get svc
+ 1142  cat mysqlclusterip.yaml
+ 1143  ls
+ 1144  cd ..
+ 1145  ls
+ 1146  cd mysql-deployment-k8s/
+ 1147  ls
+ 1148  cp mysql-deployment.yml ../emart/
+ 1149  cd ..
+ 1150  ls
+ 1151  cd emart/
+ 1152  ls
+ 1153  vi mysql-deployment.yml
+ 1154  cat pv.yml
+ 1155  cat configmap.yml
+ 1156  vi mysql-deployment.yml
+ 1157  cat pvc.yml
+ 1158  cat mysqlsecret.yml
+ 1159  kubectl apply -f mysql-deployment.yml
+ 1160  kubectl get deploy
+ 1161  kubectl get pod
+ 1162  kubectl apply -f mysqlclusterip.yaml
+ 1163  kubectl get pod -o wide
+ 1164  vi emart-deployment.yml
+ 1165  kubectl apply -f emart-deployment.yml
+ 1166  kubectl get pod -o wide
+ 1167  kubectl expose pod emart-webapp-84556c7946-shz67 --type=NodePort --port=8080 --name=my-emart-service-1
+ 1168  kubectl get svc
+ 1169  kubectl get pod -o wide
+ 1170  kubectl exec mysql-65bbc6789c-5jbq9 /bin/bash
+ 1171  kubectl exec -it mysql-65bbc6789c-5jbq9 /bin/bash
+ 1172  ls
+ 1173  cd k8s/
+ 1174  cd today_date/
+ 1175  ls
+ 1176  cd emart/
+ 1177  ls
+ 1178  git clone git@github.com:Santhakumari94/emart-onlineshopping-k8s-pvt.git
+ 1179  cd k8s/
+ 1180  ls
+ 1181  cd today_date/emart/
+ 1182  ls
+ 1183  kubectl get deploy
+ 1184  kubectl get pod -o wide
+ 1185  ls
+ 1186  cp emart-deployment.yml repo-deployment.yml
+ 1187  vi repo-deployment.yml
+ 1188  kubectl delete deploy emart-webapp
+ 1189  kubectl delete pod emart-webapp-84556c7946-shz67
+ 1190  kubectl apply -f repo-deployment.yml
+ 1191  kubectl get pod -o wide
+ 1192  kubectl get deploy
+ 1193  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
+ 1194  kudectl get pod
+ 1195  kubectl get pod
+ 1196  kubectl expose pod emart-webapp-7b9b78969b-xjmrc --type=NodePort --port=8080 --name=my-first-service-100
+ 1197  kubectl get svc
+ 1198  kubectl get pod
+ 1199  kubectl logs emart-webapp-7b9b78969b-xjmrc
+ 1200  kubectl logs mysql-65bbc6789c-5jbq9
+ 1201  kubectl -f logs mysql-65bbc6789c-5jbq9
+ 1202  kubectl logs mysql-65bbc6789c-5jbq9
+ 1203  kudectl get pod
+ 1204  kubectl get pod
+ 1205  kubectl get deploy
+ 1206  kubectl delete deploy mysql
+ 1207  kubectl get pv.
+ 1208  kubectl get pv
+ 1209  kubectl delete pv task-pv-volume
+ 1210  kubectl delete pvc
+ 1211  kubectl get pvc
+ 1212  kubectl delete pvc task-pv-claim
+ 1213  kubectl get secrete
+ 1214  kubectl get secret
+ 1215  kubectl delete secretmy-db-secret
+ 1216  kubectl get configmap
+ 1217  kubectl delete configmap emart-dbcreation-script
+ 1218  kubectl delete secret my-db-secret
+ 1219  cd k8s/
+ 1220  cd today_date/emart/
+ 1221  ls
+ 1222  kubectl apply -f pv.yml
+ 1223  kubectl apply -f pvc.yml
+ 1224  kubectl apply -f configmap.yml
+ 1225  kubectl apply -f mysqlsecret.yml
+ 1226  kubectl apply -f mysqlclusterip.yaml
+ 1227  kubectl apply -f mysql-deployment.yml
+ 1228  kubectl apply -f mysqlclusterip.yaml
+ 1229  kubectl apply -f repo-deployment.yml
+ 1230  kubectl get deplo
+ 1231  kubectl delete emart-webapp
+ 1232  kubectl delete deploy emart-webapp
+ 1233  kubectl get pod -o wide
+ 1234  vi repo-deployment.yml
+ 1235  kubectl apply -f repo-deployment.yml
+ 1236  kubectl get pod -o wide
+ 1237  kubectl get deploy
+ 1238  kubectl get pod -o wide
+ 1239  vi repo-deployment.yml
+ 1240  kubectl get pod -o wide
+ 1241  kubectl delete pod emart-webapp-cd4cd49b8-rlwfv
+ 1242  kubectl get pod -o wide
+ 1243  kube
+ 1244  kubectl apply -f repo-deployment.yml
+ 1245  kubectl get pod -o wide
+ 1246  ls
+ 1247  kubectl delete deploy emart-webapp
+ 1248  kubectl apply -f emart-deployment.yml
+ 1249  kubectl get pod -o wide
+ 1250  kubectl delete deploy emart-webapp
+ 1251  kubectl delete secret my-db-secret
+ 1252  history
+ 1253  kubectl delete pvc task-pv-claim
+ 1254  kubectl delete secretmy-db-secret
+ 1255  kubectl delete secret my-db-secret
+ 1256  kubectl get svc
+ 1257  cd k8s/today_date/emart/
+ 1258  ls
+ 1259  kubectl get deploy
+ 1260  kubectl get pv
+ 1261  kubectl get configmap
+ 1262  kubectl get secret
+ 1263  kubectl get svc
+ 1264  kubectl delete svc mysql
+ 1265  kubectl delete svc my-first-service-100
+ 1266  kubectl delete svc my-first-service-2
+ 1267  kubectl delete svc my-service1
+ 1268  kubectl delete svc my-user-service
+ 1269  kubectl delete svc myapp-service
+ 1270  kubectl delete svc mysql
+ 1271  kubectl delete svc my-emart-service
+ 1272  kubectl delete svc my-emart-service-1
+ 1273  kubectl delete svc my-first-service-3
+ 1274  kubectl delete svc my-first-service-10
+ 1275  kubectl get svc
+ 1276  kubectl delete svc my-first-service-1
+ 1277  kubectl get pv
+ 1278  kubectl delete pv
+ 1279  kubectl delete pv task-pv-volume
+ 1280  kubectl delete pv
+ 1281  cd k8s/today_date/emart/
+ 1282  kubectl apply -f pv.yml
+ 1283  kubectl delete pv task-pv-volume
+ 1284  kubectl get pvc
+ 1285  kubectl delete pvc task-pv-claim
+ 1286  ls
+ 1287  kubectl apply -f pv.yml
+ 1288  kubectl apply -f pvc.yml
+ 1289  kubectl apply -f configmap.yml
+ 1290  kubectl apply -f mysqlsecret.yml
+ 1291  kubectl apply -f mysql-deployment.yml
+ 1292  kubectl get deploy
+ 1293  kubectl delete deploy mysql
+ 1294  kubectl apply -f mysql-deployment.yml
+ 1295  kubectl get deploy
+ 1296  kubectl get pod
+ 1297  kubectl get deploy
+ 1298  kubectl get mysqlclusterip.yaml
+ 1299  kubectl apply -f mysqlclusterip.yaml
+ 1300  kubectl get deploy
+ 1301  kubectl delete deploy mysql
+ 1302  kubectl apply -f mysql-deployment.yml
+ 1303  kubectl get deploy
+ 1304  kubectl get pod
+ 1305  kubectl logs mysql-65bbc6789c-4rtz5
+ 1306  kubectl get logs mysql-65bbc6789c-4rtz5
+ 1307  kubectl get pod
+ 1308  kubectl exec -it mysql-65bbc6789c-4rtz5 /bin/bash
+ 1309  ls
+ 1310  kubectl get pod
+ 1311  kubectl get configmap
+ 1312  kubectl delete configmap emart-dbcreation-script
+ 1313  kubectl get secret
+ 1314  kubectl delete secret my-db-secret
+ 1315  kubectl get svc
+ 1316  kubectl delete svc mysql
+ 1317  kubectl delete deploy mysql
+ 1318  kubectl get pod
+ 1319  kubectl get deploy
+ 1320  cd k8s/today_date/emart/
+ 1321  LS
+ 1322  ls
+ 1323  kubectl get pv
+ 1324  kubectl apply -f pv.yml
+ 1325  kubectl apply -f pvc.yml
+ 1326  kubectl apply -f configmap.yml
+ 1327  kubectl apply -f mysqlsecret.yml
+ 1328  kubectl apply -f mysqlclusterip.yaml
+ 1329  kubectl apply -f mysql-deployment.yml
+ 1330  kubectl apply -f mysqlclusterip.yaml
+ 1331  kubectl get pod
+ 1332  kubectl get pod -o wide
+ 1333  vi repo-deployment.yml
+ 1334  kubectl apply -f repo-deployment.yml
+ 1335  kubectl apply -f service.yml
+ 1336  kubectl get pod -o wide
+ 1337  kubectl expose pod emart-webapp-86dccc9bdb-952k6 --type=NodePort --port=8080 --name=my-repo-service
+ 1338  kubectl get svc
+ 1339  kubectl get logs my-repo-service
+ 1340  kubectl get pod
+ 1341  kubectl get logs emart-webapp-86dccc9bdb-952k6
+ 1342  kubectl  logs emart-webapp-86dccc9bdb-952k6
+ 1343  kubectl get deploy
+ 1344  kubectl delete deploy emart-webapp
+ 1345  kubectl apply -f emart-deployment.yml
+ 1346  kubectl apply -f service.yml
+ 1347  kubectl get pod
+ 1348  kubectl expose pod emart-webapp-84556c7946-vmtbq --type=NodePort --port=8080 --name=my-emart-service
+ 1349  kubectl get svc
+ 1350  kubectl get pod
+ 1351  kubectl logs emart-webapp-84556c7946-vmtbq
+ 1352  kubectl exec -it mysql-65bbc6789c-4rtz5 /bin/bash
+ 1353  history
+ 1354  kubectl delete deploy mysql
+ 1355  kubectl delete svc mysql
+ 1356  kubectl delete deploy emart-webapp
+ 1357  kubectl delete pv task-pv-volume
+ 1358  kubectl delete pvc task-pv-claim
+ 1359  kubectl delete configmap emart-dbcreation-script
+ 1360  kubectl get deploy
+ 1361  cat pv.yml
+ 1362  cat pvc.yml
+ 1363  cat mysqlclusterip.yaml
+ 1364  cat configmap.yml
+ 1365  vi configmap.yml
+ 1366  vi mysql-deployment.yml
+ 1367  cat mysqlsecret.yml
+ 1368  vi repo-deployment.yml
+ 1369  ls
+ 1370  kubectl apply -f pv.yml
+ 1371  kubectl apply -f pvc.yml
+ 1372  kubectl apply -f configmap.yml
+ 1373  kubectl apply -f
+ 1374  kubectl apply -f mysqlsecret.yml
+ 1375  kubectl apply -f mysql-deployment.yml
+ 1376  kubectl apply -f mysqlclusterip.yaml
+ 1377  kubectl get pod
+ 1378  la
+ 1379  kubectl get pod -o wide
+ 1380  vi repo-deployment.yml
+ 1381  kubectl apply -f repo-deployment.yml
+ 1382  cat service.yml
+ 1383  kubectl apply -f service.yml
+ 1384  kubectl get pod -o wide
+ 1385  kubectl expose pod emart-webapp-687cc455d5-jfqnj --type=NodePort --port=8080 --name=my-first-service-10
+ 1386  kubectl get svc
+ 1387  kubectl logs emart-webapp-687cc455d5-jfqnj
+ 1388  mysql -uroot -p
+ 1389  kubectl get pod -o wide
+ 1390  kubectl exec -it mysql-65bbc6789c-48xfj /bin/bash
+ 1391  kubectl get pod -o wide
+ 1392  ls
+ 1393  vi repo-deployment.yml
+ 1394  cat pv.yml
+ 1395  cat pvc.yml
+ 1396  cat configmap.yml
+ 1397  ssh root@k8sclient
+ 1398  history
+ 1399  kubectl delete deploy mysql
+ 1400  kubectl get secret
+ 1401  kubectl delete deploy mysql
+ 1402  kubectl delete svc mysql
+ 1403  kubectl delete deploy emart-webapp
+ 1404  kubectl delete pvc task-pv-claim
+ 1405  kubectl delete pv task-pv-volume
+ 1406  kubectl delete configmap emart-dbcreation-script
+ 1407  kubectl apply -f pv.yml
+ 1408  kubectl apply -f pvc.yml
+ 1409  kubectl apply -f configmap.yml
+ 1410  kubectl apply -f mysqlsecret.yml
+ 1411  kubectl apply -f mysql-deployment.yml
+ 1412  kubectl get pod
+ 1413  kubectl exec -it mysql-65bbc6789c-rgqv2 /bin/bash
+ 1414  kubectl apply -f mysqlclusterip.yaml
+ 1415  kubectl get pod -o wide
+ 1416  vi repo-deployment.yml
+ 1417  vi service.yml
+ 1418  kubectl apply -f repo-deployment.yml
+ 1419  kubectl get pod -o wide
+ 1420  kubectl get svc
+ 1421  kubectl logs emart-webapp-5549cb75df-knkld
+ 1422  history
+ 1423  kubectl get pod -o wide
+ 1424  kubectl expose pod emart-webapp-5549cb75df-knkld --type=NodePort --port=9090 --name=my-repo-1-service-
+ 1425  kubectl expose pod emart-webapp-5549cb75df-knkld --type=NodePort --port=9090 --name=my-repo-1-service
+ 1426  kubectl get svc
+ 1427  kubectl get pod
+ 1428  cd k8s/
+ 1429  cd today_date/emart/
+ 1430  ls
+ 1431  vi emart-deployment.yml
+ 1432  kubectl delete deploy mysql
+ 1433  kubectl delete svc mysql
+ 1434  kubectl delete deploy emart-webapp
+ 1435  kubectl delete pvc task-pv-claim
+ 1436  kubectl delete configmap emart-dbcreation-script
+ 1437  kubectl delete secret my-db-secret
+ 1438  kubectl get deploy
+ 1439  kubectl get pod
+ 1440  kubectl apply -f pv.yml
+ 1441  kubectl delete deploy mysql
+ 1442  kubectl delete svc mysql
+ 1443  kubectl delete deploy emart-webapp
+ 1444  kubectl delete pvc task-pv-claim
+ 1445  kubectl delete pv task-pv-volume
+ 1446  kubectl apply -f pv.yml
+ 1447  kubectl apply -f pvc.yml
+ 1448  kubectl apply -f configmap.yml
+ 1449  kubectl apply -f mysqlsecret.yml
+ 1450  kubectl apply -f mysql-deployment.yml
+ 1451  kubectl apply -f mysqlclusterip.yaml
+ 1452  kubectl get pod -o wide
+ 1453  kubectl delete deploy mysql
+ 1454  kubectl delete pod emart-webapp-5549cb75df-knkld
+ 1455  kubectl delete pod mysql-65bbc6789c-5jt6x
+ 1456  kubectl delete pod mysql-65bbc6789c-rgqv2
+ 1457  kubectl delete deploy mysql
+ 1458  kubectl get pod -o wide
+ 1459  kubectl delete pod mysql-65bbc6789c-rgqv2
+ 1460  kubectl apply -f mysqlclusterip.yaml
+ 1461  kubectl apply -f mysql-deployment.yml
+ 1462  kubectl get pod -o wide
+ 1463  kubectl delete deploy mysql
+ 1464  kubectl delete pod mysql-65bbc6789c-rgqv2
+ 1465  kubectl delete pod mysql-65bbc6789c-zk5h5
+ 1466  ls
+ 1467  cd k8s/today_date/emart/
+ 1468  ls
+ 1469  vi emart-deployment.yml
+ 1470  ls
+ 1471  cd
+ 1472  ls
+ 1473  cd k8s/
+ 1474  ls
+ 1475  cd sapient-deploy-manifest/
+ 1476  ls
+ 1477  cat deployment.yml
+ 1478  cd
+ 1479  cd k8s/today_date/emart/e
+ 1480  cd k8s/today_date/emart/
+ 1481  ls
+ 1482  vi mysql-deployment.yml
+ 1483  vi pv.yml
+ 1484  vi pvc.yml
+ 1485  vi configmap.yml
+ 1486  vi mysqlsecret.yml
+ 1487  vi mysqlclusterip.yaml
+ 1488  vi service.yml
+ 1489  vi mysql-deployment.yml
+ 1490  clear
+ 1491  history
