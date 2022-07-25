@@ -1,0 +1,527 @@
+root@master:~# history
+    1  ssh-keygen -t rsa
+    2  cat /root/.ssh/id_rsa.pub
+    3  ssh root@client
+    4  cat /root/.ssh/id_rsa.pub
+    5  ssh root@client
+    6  ping client
+    7  apt update -y
+    8  apt install -y ansible
+    9  cat /root/.ssh/id_rsa.pub
+   10  ssh root@client2
+   11  ansible --version
+   12  clear
+   13  cd /etc/ansible/
+   14  ls
+   15  cat ansible.cfg
+   16  more ansible.cfg
+   17  ansible all -m ping
+   18  vi hosts
+   19  ansible all -m ping
+   20  ping client2
+   21  ls
+   22  cd /usr/lib/python3/dist-packages/ansible
+   23  ls
+   24  cd modules
+   25  ls
+   26  cd net_tools/
+   27  ls
+   28  cd /root
+   29  ansible all -m ping
+   30  cd /etc/ansible/
+   31  vi hosts
+   32  ansible all -m ping
+   33  vi hosts
+   34  ansible client2 -m command -a uptime
+   35  uptime
+   36  ansible client2 -m command -a "ls -l"
+   37  cd /root/
+   38  ansible client2 -m command -a "ls -l"
+   39  ansible client2 -m command -a "df -h"
+   40  ansible client2 -m command -a "free -m"
+   41  ansible client2 -m command -a "ls -la"
+   42  ls -la
+   43  ansible client2 -m group -a "name=weblogic state=present"
+   44  ssh root@client2
+   45  ansible client2 -m group -a "name=weblogic state=present"
+   46  id weblogic
+   47  cat /home/
+   48  ls /home/
+   49  ansible client -m file -a "path=/tmp/x state=directory mode=0755"
+   50  ansible client2 -m file -a "path=/tmp/x state=directory mode=0755"
+   51  ansible client2 -m file -a "path=/tmp/x group=weblogic owner=weblogic"
+   52  git clone https://github.com/gopal1409/sapient-ansible-play.git
+   53  ls
+   54  cd sapient-ansible-play/
+   55  ansible-playbook motd_play.yml
+   56  mls
+   57  ls
+   58  vi motd_play.yml
+   59  ansible-playbook motd_play.yml
+   60  ssh root@client2
+   61  ansible-playbook motd_play.yml
+   62  vi motd_play.yml
+   63  ansible-playbook motd_play.yml
+   64  ssh root@client2
+   65  vi hosts
+   66  ansible-playbook motd_play.yml
+   67  ssh root@client2
+   68  ls
+   69  cat ansible.cfg
+   70  cat hosts
+   71  cat motd_play.yml
+   72  ansible all -m ping
+   73  ansible all -m setup
+   74  ansible all -m setup | grep ansible_distribution
+   75  git pull
+   76  gitgit checkout hosts
+   77  git checkout hosts
+   78  git checkout motd_play.yml
+   79  git pull
+   80  cd
+   81  cat /root/.ssh/id_rsa.pub
+   82  cd /etc/ansible/
+   83  vi hosts
+   84  ansible all -m ping
+   85  ssh root@client
+   86  ansible all -m ping
+   87  cd
+   88  ls
+   89  cd sapient-ansible-play/
+   90  ls
+   91  vi hosts
+   92  vi motd_play.yml
+   93  ansible-playbook motd_play.yml
+   94  ssh root@client
+   95  ssh root@client2
+   96  vi motd_play.yml
+   97  ansible-playbook motd_play.yml
+   98  ssh root@client
+   99  ssh root@client2
+  100  ssh root@client
+  101  ssh root@client2
+  102  ssh root@client
+  103  ansible-playbook motd_play.yml
+  104  git pull
+  105  git checkout motd_play.yml
+  106  git checkout hosts
+  107  git pull
+  108  vi motd_play.yml
+  109  vi hosts
+  110  ansible-playbook motd_play.yml
+  111  vi motd_play.yml
+  112  ansible-playbook motd_play.yml
+  113  cat motd_play.yml
+  114  git checkout hosts
+  115  vi motd_play.yml
+  116  git checkout motd_play.yml
+  117  git pull
+  118  vi motd_play.yml
+  119  ls
+  120  vi nginx-playbook.yml
+  121  vi hosts
+  122  ansible-playbook nginx-playbook.yml -vvv
+  123  git checkout nginx-playbook.yml
+  124  git checkout hosts
+  125  git pull
+  126  vi hosts
+  127  vi nginx-playbook.yml
+  128  ansible-playbook nginx-playbook.yml -vvv
+  129  vi nginx-playbook.yml
+  130  git checkout hosts
+  131  git checkout nginx-playbook.yml
+  132  git pull
+  133  vi hosts
+  134  vi nginx-playbook.yml
+  135  ansible-playbook nginx-playbook.yml -vvv
+  136  vi nginx-playbook.yml
+  137  ansible-playbook nginx-playbook.yml
+  138  git checkout nginx-playbook.yml
+  139  git checkout hosts
+  140  git pull
+  141  vi nginx-playbook.yml
+  142  vi hosts
+  143  ansible-playbook nginx-playbook.yml
+  144  vi nginx-playbook.yml
+  145  git checkout nginx-playbook.yml
+  146  git checkout hosts
+  147  git pull
+  148  vi nginx-playbook.yml
+  149  clear
+  150  cd sapient-ansible-play/
+  151  ssh root@client2
+  152  ls
+  153  cd sapient-ansible-play/
+  154  ls
+  155  vi nginx-playbook.yml
+  156  git pull
+  157  ls
+  158  ansible-playbook nginx-playbook.yml
+  159  vi hosts
+  160  vi nginx-playbook.yml
+  161  ansible-playbook nginx-playbook.yml
+  162  vi nginx-playbook.yml
+  163  cd
+  164  cd /etc/nginx
+  165  cd /etc/
+  166  ls
+  167  cd
+  168  cd sapient-ansible-play/
+  169  lsa
+  170  ls
+  171  ls files/
+  172  vi files/nginx-default.conf
+  173  vi files/nginx.conf.redhat.patch
+  174  ls templates/
+  175  vi templates/index.html.j2
+  176  vi nginx-playbook.yml
+  177  ls
+  178  cd ..
+  179  mkdir ansible-play-2
+  180  cp sapient-ansible-play/hosts sapient-ansible-play/ansible.cfg ansible-play-2/
+  181  ls ansible-play-2/
+  182  cd ansible-play-2/
+  183  ls
+  184  touch maven-playbook.yml
+  185  ls
+  186  code .
+  187  git config --global user.name "Santhakumari94"
+  188  git config --global user.email "santha.narap94@gmail.com"
+  189  git status
+  190  cd ..
+  191  ls
+  192  cd snap/
+  193  ls
+  194  git clone https://github.com/Santhakumari94/ansible-maven.git
+  195  cd ansible-maven/
+  196  cp /root/ansible-play-2/* .
+  197  ls
+  198  git status
+  199  git add .
+  200  git status
+  201  git commit -m "created playbook.yml file"
+  202  git push
+  203  git remote add origin https://github.com/Santhakumari94/ansible-maven.git
+  204  git push
+  205  git push -u origin master
+  206  git push
+  207  ls
+  208  vi maven-playbook.yml
+  209  ansible-playbook maven-playbook.yml
+  210  cd ..
+  211  ls
+  212  cd sapient-ansible-play/
+  213  ls
+  214  git pull
+  215  git checkout nginx-playbook.yml
+  216  git checkout hosts
+  217  git pull
+  218  ls
+  219  vi maven_playbook.yaml
+  220  git pull
+  221  vi maven_playbook.yaml
+  222  vi hosts
+  223  ansible-playbook maven_playbook.yaml
+  224  vi maven_playbook.yaml
+  225  ssh root@client2
+  226  vi maven_playbook.yaml
+  227  git pull
+  228  git checkout hosts
+  229  git checkout maven_playbook.yaml
+  230  git pull
+  231  vi hosts
+  232  vi maven_playbook.yaml
+  233  ansible-playbook maven_playbook.yaml
+  234  vi maven_playbook.yaml
+  235  cd sapient-ansible-play/
+  236  ls
+  237  git pull
+  238  git checkout maven_playbook.yaml
+  239  git checkout hosts
+  240  git pull
+  241  ls
+  242  vi win.inv
+  243  ansible all -m win_ping
+  244  vi win.inv
+  245  git pull
+  246  git checkout win.inv
+  247  git pull
+  248  ls
+  249  git pull
+  250  vi win.yml
+  251  vi win.inv
+  252  ansible all -m win_ping
+  253  ansible_playbook win.yml
+  254  ansible-playbook win.yml
+  255  git checkout win.inv
+  256  git pull
+  257  vi win.inv
+  258  ansible-playbook win.yml
+  259  vi maven_playbook.yaml
+  260  touch tomcat-playbook.yml
+  261  vi tomcat-playbook.yml
+  262  ls
+  263  vi ansible.cfg
+  264  vi gopal.inv
+  265  vi ansible.cfg
+  266  ansible-playbook tomcat-playbook.yml
+  267  vi tomcat-playbook.yml
+  268  ansible-playbook tomcat-playbook.yml
+  269  vi tomcat-playbook.yml
+  270  ansible-playbook tomcat-playbook.yml
+  271  vi tomcat-playbook.yml
+  272  ansible-playbook tomcat-playbook.yml
+  273  ssh root@client
+  274  vi tomcat-playbook.yml
+  275  ansible-playbook tomcat-playbook.yml
+  276  vi tomcat-playbook.yml
+  277  ansible-playbook tomcat-playbook.yml
+  278  cd
+  279  cd /etc/
+  280  ls
+  281  cd
+  282  cd sapient-ansible-play/
+  283  vi tomcat-playbook.yml
+  284  ansible-playbook tomcat-playbook.yml
+  285  vi tomcat-playbook.yml
+  286  ansible-playbook tomcat-playbook.yml
+  287  vi tomcat-playbook.yml
+  288  ansible-playbook tomcat-playbook.yml
+  289  vi tomcat-playbook.yml
+  290  ansible-playbook tomcat-playbook.yml
+  291  vi tomcat-playbook.yml
+  292  ansible-playbook tomcat-playbook.yml
+  293  ls
+  294  mkdir template
+  295  cd template
+  296  touch tomcat.service.j2
+  297  vi tomcat.service.j2
+  298  ssh root@client
+  299  cd sapient-ansible-play/
+  300  ls
+  301  cd template
+  302  ls
+  303  vi tomcat.service.j2
+  304  vi tomcat-playbook.yml
+  305  cd ..
+  306  vi tomcat-playbook.yml
+  307  ansible-playbook tomcat-playbook.yml
+  308  vi tomcat-playbook.yml
+  309  ansible-playbook tomcat-playbook.yml
+  310  cp template/tomcat.service.j2 templates/
+  311  ansible-playbook tomcat-playbook.yml
+  312  vi templates/tomcat.service.j2
+  313  ansible-playbook tomcat-playbook.yml
+  314  vi templates/tomcat.service.j2
+  315  ansible-playbook tomcat-playbook.yml
+  316  vi templates/tomcat.service.j2
+  317  ansible-playbook tomcat-playbook.yml
+  318  ssh root@client
+  319  systemctl status firewalld
+  320  ssh root@client2
+  321  cd sapient-ansible-play/
+  322  ls
+  323  vi tomcat-playbook.yml
+  324  cd
+  325  vi date-out.txt
+  326  vi date-out.txt
+  327  touch date-out-put.txt
+  328  chmod 755 date-out.txt
+  329  crontab -e
+  330  mv date-out.txt data-script.sh
+  331  crontab -e
+  332  ./data-script.sh
+  333  echo date
+  334  echo $date
+  335  echo $(date)
+  336  crontab -e
+  337  vi date-out-put.txt
+  338  vi data-script.sh
+  339  date
+  340  cat date-out-put.txt
+  341  date
+  342  cat date-out-put.txt
+  343  date
+  344  cat date-out-put.txt
+  345  date
+  346  cat date-out-put.txt
+  347  ssh root@client2
+  348  cd sapient-ansible-play/
+  349  ls
+  350  vi templates/tomcat.service.j2
+  351  ansible-playbook tomcat-playbook.yml
+  352  cd
+  353  ls
+  354  mkdir ansible
+  355  cd ansible
+  356  git clone https://github.com/gopal1409/sapient-ansible-play.git
+  357  git pull
+  358  cd sapient-ansible-play/
+  359  git pull
+  360  ls
+  361  ansible-playbook tomcat.yml
+  362  vi tomcat.yml
+  363  vi ansible.cfg
+  364  vi gopal.inv
+  365  ansible-playbook tomcat.yml
+  366  ls
+  367  ls templates/
+  368  cat templates/tomcat.service.j2
+  369  vi tomcat.yml
+  370  cd ..
+  371  cd sapient-ansible-play/
+  372  vi templates/tomcat.service.j2
+  373  vi tomcat-playbook.yml
+  374  ansible-playbook tomcat-playbook.yml
+  375  vi tomcat-playbook.yml
+  376  ansible-playbook tomcat-playbook.yml
+  377  ansible-galaxy init tomcat
+  378  ls
+  379  tree tomcat
+  380  apt update -y
+  381  apt install tree -y
+  382  tree tomcat
+  383  ls
+  384  cd ansible
+  385  ls
+  386  cd sapient-ansible-play/
+  387  ls
+  388  ansible-galaxy init tomcat
+  389  tree tomcat
+  390  la
+  391  ls
+  392  cd ..
+  393  mkdir roles
+  394  cd roles/
+  395  ansible-galaxy init tomcat
+  396  ls
+  397  vi ansible.cfg
+  398  vi gopal.inv
+  399  vi iac.yml
+  400  ansible-playbook iac.yml
+  401  vi gopal.inv
+  402  vi iac.yml
+  403  ansible-playbook iac.yml
+  404  cd tomcat/tasks/
+  405  ls
+  406  vi installjdk.yml
+  407  vi main.yml
+  408  cd ../..
+  409  ansible-playbook iac.yml
+  410  vi tomcat/tasks/installjdk.yml
+  411  vi gopal.inv
+  412  vi iac.yml
+  413  ansible-playbook iac.yml
+  414  vi tomcat/tasks/user.yml
+  415  vi tomcat/tasks/main.yml
+  416  ansible-playbook iac.yml
+  417  vi tomcat/tasks/tomcat.yml
+  418  vi tomcat/tasks/main.yml
+  419  vi tomcat/vars/main.yml
+  420  ansible-playbook iac.yml
+  421  vi tomcat/tasks/tomcat.yml
+  422  ansible-playbook iac.yml
+  423  vi tomcat/templates/tomcat.service.j2
+  424  ansible-playbook iac.yml
+  425  ansible-galaxy init nginx
+  426  ls
+  427  cd nginx/
+  428  ls
+  429  vi tasks/epl-release.yml
+  430  vi tasks/installnginx.yml
+  431  vi tasks/patch.yml
+  432  vi templates/index.html.j2
+  433  vi tasks/addfirewall.yml
+  434  vi tasks/main.yml
+  435  vi handlers/service.yml
+  436  vi tasks/main.yml
+  437  cd ..
+  438  ls
+  439  vi iac.yml
+  440  ansible-galaxy init nginx
+  441  ansible-playbook iac.yml
+  442  cd nginx/
+  443  cd handlers/
+  444  ls
+  445  main.yml
+  446  vi main.yml
+  447  cd ..
+  448  vi tasks/main.yml
+  449  cd ..
+  450  ansible-playbook iac.yml
+  451  cd nginx/
+  452  ls templates/
+  453  ls
+  454  ls templates/cd ..
+  455  vi handlers/main.yml
+  456  ansible-playbook iac.yml
+  457  cd ..
+  458  ansible-playbook iac.yml
+  459  vi nginx/tasks/epl-release.yml
+  460  vi gopal.inv
+  461  vi iac.yml
+  462  ansible-playbook iac.yml
+  463  vi nginx/tasks/patch.yml
+  464  ansible-playbook iac.yml
+  465  ls nginx/
+  466  vi files/nginx-default.conf
+  467  vi nginx/files/nginx-default.conf
+  468  vi nginx/files/nginx.conf.redhat.patch
+  469  ansible-playbook iac.yml
+  470  ls nginx/tasks/
+  471  vi nginx/tasks/patch.yml
+  472  ansible-playbook iac.yml
+  473  vi nginx/tasks/addfirewall.yml
+  474  ansible-playbook iac.yml
+  475  nmap -v -n -p- -sT -sV -O --osscan-limit --max-os-tries 1 -oX $HOME/home_scan.xml 10.0.0.0/24
+  476  nmap -v -n -p22 -sT -sV -O --osscan-limit --max-os-tries 1 -oX $HOME/home_scan.xml 10.0.0.0/24
+  477  cd /root
+  478  pwd
+  479  cat home_scan.xml
+  480  nmap -v -n -p22 -sT -sV -O --osscan-limit --max-os-tries 1 -oX $HOME/home_scan.xml 10.0.0.4/24
+  481  cat home_scan.xml
+  482  ls
+  483  mkdir ansibleinv
+  484  cd ansibleinv/
+  485  vi ansible.cfg
+  486  vi nmap
+  487  vi nmap.yml
+  488  ansible all -i nmap.yml --list-hosts
+  489  ansible all -i nmap.yml --list-hosts --graph
+  490  ansible-inventory -i nmap.yml --graph
+  491  clear
+  492  ls
+  493  cd sapient-ansible-play/
+  494  ls
+  495  git branch
+  496  cd ..
+  497  ls
+  498  cd ansible
+  499  l
+  500  ls sapient-ansible-play/
+  501  mv gopal.inv santha.inv
+  502  cd sapient-ansible-play/
+  503  mv gopal.inv santha.inv
+  504  cd ..
+  505  git clone
+  506  git clone https://github.com/Santhakumari94/ansible-tomcat-maven-installation.git
+  507  cp -r sapient-ansible-play/* ansible-tomcat-maven-installation/
+  508  ls ansible-tomcat-maven-installation/
+  509  cd ansible-tomcat-maven-installation/
+  510  git status
+  511  git add .
+  512  git commit -m "playbooks added"
+  513  git push -u master
+  514  git remote add origin https://github.com/Santhakumari94/ansible-tomcat-maven-installation.git
+  515  git push -u origin main
+  516  git push -u origin master
+  517  history
+  518  cat /root/.ssh/id_rsa.pub
+  519  git push -u origin master
+  520  git push
+  521  git remote remove origin
+  522  git remote add origin git@github.com:Santhakumari94/ansible-tomcat-maven-installation.git
+  523  git push
+  524  docker images
+  525  clear
+  526  history
